@@ -1,13 +1,15 @@
 *
 
 !.gitignore
-!anhang/
-!biblio/
+!anhang/*.tex
+!biblio/*.bib
 !grafiken/
 !grafiken/*
-!kapitel/
+!kapitel/*.tex
 !sourcecode/
 !*.tex
 !*.bib
 !*.sty
 !*.bib
+
+grafiken/.DS_Store
