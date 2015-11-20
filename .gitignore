@@ -1,7 +1,13 @@
 *
 
 !.gitignore
+!anhang/
+!biblio/
+!grafiken/
+!grafiken/*
+!kapitel/
+!sourcecode/
 !*.tex
 !*.bib
 !*.sty
-!grafiken/*
+!*.bib
