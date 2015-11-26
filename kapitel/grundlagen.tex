@@ -142,19 +142,136 @@ Für die Durchführung der Nutzertests ist nach Nielsen eine Probandengruppe von
 \end{equation}
 Dabei ist \(n\) die Anzahl an Testpersonen und \(L\) der Anteil gefundener Usability-Probleme pro Testsubjekt (31\%) \cite{Nielsen2000}. Das bedeutet bei 5 Testpersonen eine Abdeckung von rund 85\%. Das Testen mit mehr Anwendern würde das Budget stark belasten und wenig zusätzlichen Nutzen mit sich bringen. Daher ist es sinnvoller, in vielen Durchläufen mit wenigen Personen zu testen, als in wenigen Durchläufen mit vielen \cite{Nielsen2000}.
 
-\subsection{Hallway-Testing}
-\textbf{Bewertung nach Ullenboom}
+\heading{Eyetracking}
 
+\heading{Hallway-Testing}
+Das Hallway-Testing ist eine sehr informelle Methode, erstes Feedback über die Usability eines kleinen Programmteiles zu erhalten. Das Prinzip des Hallway-Testing ist es, einen beliebigen zu fragen, was er von einer bestimmten Funktion hält. Dazu wird eine kurze Aufgabe gestellt (wie z.B. \enquote{Drucke dieses Dokument}) und beobachtet, wie der Kandidat sich verhält. Bei komplexeren Sachverhalten wird so kurz wie möglich die Fachlichkeit bzw. der Nutzungskontext erklärt. Ohne Hinweise für die Lösung zu geben, wird die Aufgabe kurz erklärt. Bei der Durchführung denkt der Testnutzer laut mit \cite[S. 226]{Ullenboom2014}.
+Mit sehr wenig Aufwand können durch diese Methode während der Entwicklung grobe Nutzungsprobleme beseitigt werden.
+\heading{Pluralistic Walkthrough}
+Beim Pluralistic Walkthrough handelt e sich um eine Art von Nutzertests. Die Testkandidaten werden in einer Art Workshop versammelt und bekommen die Anwendung grob vorgestellst, sodass sie sich auf dem Wissensstand eines durchschnittlichen Erstbenutzers befinden. Daraufhin wird die Aufgabenstellung unterbreitet und die Nutzer versuchen diese mit der ihnen gegebenen Anwendung umzusetzen. Am Ende des Tests wird die Optimallösung vorgestellt. Die Testanwender beschreiben daraufhin ihre Lösung. Zum Feststellen der konkreten Usability-Probleme, also der Gründe, warum eine andere Lösung gewählt oder gefunden wurde, wird zum Abschluss über die Lösungen diskutiert und die Fehlerquellen herausgearbeitet \cite[S. 228]{Ullenboom2014}.\par
+\heading{Formaler Usability-Test}
+Bei dieser Methode werden Testpersonen einzeln mit der Bedienung eines Programmes betraut. Nachdem festgelegt wurde, welche Teile der Anwendung getestet werden sollen, werden Aufgaben formuliert und niedergeschrieben. Diese Aufgaben erhält der Testkandidat in schriftlicher Form. Er versucht diese mit der vorliegenden Anwendung zu lösen und wird währenddessen beobachtet. Zu diesem Zweck wird zum Einen der Bildschirminhalt aufgezeichnet und zum anderen die Reaktion des Teilnehmers selbst analysiert \cite[S. 230]{Ullenboom2014}.\par
+% INSERT
+\heading{Heuristische Evaluation}
+Die Heuristische Evaluation ist ein beliebtes Expertentestverfahren. Der Tester untersucht im Rahmen dieser Methode eine Anwendung auf Basis von Heuristiken. In der Regel werden mehrere Usability-Experten eingesetzt, um die Erkennungsrate von Problemen zu erhöhen. Am Ende werden die Ergebnisse zusammengetragen und für jedes gefundene Problem ein Schweregrad ermittelt. Dieser setzt sich aus den Faktoren \textit{Auftretenswahrschienlichkeit}, \textit{Grad der Beeinflussung} und \textit{der Möglichkeit, das Problem zu umgehen}, zusammen. Da die definierten Heuristiken eine gewisse Sicherheit bieten, kann diese Methode auch von weniger erfahrenen Testern angewandt werden \cite[S. 232f.]{Ullenboom2014}.\par
+\heading{Cognitive Walkthrough}
+Der Expertentest \enquote{Cognitive Walkthrough} ist ein Verfahren, bei dem der Usability-Tester versucht, sich in die Lage des Anwenders zu versetzen und die Anwendung zu bedienen. Um dies adäquat tun zu können, müssen zunächst die genauen Arbeitsabläufe der Endanwender erschlossen werden. Hierbei ist es sinnvoll, verstärkt komplexe Arbeitsabläufe zu testen \cite[S. 234]{Ullenboom2014}.\par
+Der erste Schritt der Analyse ist die \textit{Definition des Inputs}. Nach Ullenboom sind dazu folgende Schritte notwendig:
+\begin{enumerate}
+	\item Festlegen, welcher Teil getestet werden soll
+	\item Verstehen der Arbeitsabläufe
+	\item Formulieren von praxisnahen Aufgaben
+	\item Wahl einer geeigneten Benutzerrolle
+	\item Vorbereiten eines Prototypen \cite[S. 234]{Ullenboom2014}
+\end{enumerate}
+Bei der Durchführung werden die Aufgaben anhand des Prototypens versucht umzusetzen. Dabei wird davon ausgegangen, dass der Nutzer stets versucht, den Weg zu nehmen, den er für den einfachsten hält. Es muss bei jeder Aktion geprüft werden, ob während der Interaktion die folgenden Fragen geklärt werden:
+\begin{itemize}
+	\item Wird der Benutzer versuchen, den richtigen Effekt zu erzielen?
+	\item Wird der Benutzer erkennen, dass die korrekte Aktion zur Verfügung steht?
+	\item Wird der Benutzer eine Verbindung zwischen der korrekten Aktion und dem gewünschten Effekt herstellen?
+	\item Wenn die korrekte Aktion ausgeführt wurde: Wird der Benutzer den Fortschritt erkennen? \cite[S. 234]{Ullenboom2014}
+\end{itemize}
+Wenn sich bei einer dieser Fragestellungen Probleme zeigen, müssen diese unter Angabe des entsprechenden Handlungsschrittes, dem Grund der Probleme und möglicher Verbesserungsvorschläge dokumentiert werden. Aufgrund dieser Aufzeichnungen kann die Benutzerschnittstelle überarbeitet werden.\par
+\heading{Usability-Befragung}
+\enquote{Die Usability-Befragung ist eine quantitative Methode, bei der die Usability mit Hilfe eines Fragebogens ermittelt wird \cite[S. 236]{Ullenboom2014}.} Es ist eine Art von Nutzertest, die darauf abzielt, einen möglichst großen Anwenderbereich abzudecken. Für die Auswahl des Fragebogens gibt es mehrere Möglichkeiten:
+\begin{enumerate}
+	\item \textbf{Standardisierter Fragebogen:} Es gibt eine Reihe standardisierter Fragebögen, mit deren Hilfe ein Grobüberblick über verschiedene Aspekte der Usability einer Anwendung erlangt werden kann.
+	\item \textbf{Teilstandardisierter Fragebogen:} Verwendung von standardisierten Fragebögen, angepasst an die zu evaluierende Anwendung (z.B. Freitextfelder für weitergehende Informationen)
+	\item Selbstentwickelter Fragebogen: Durch die Entwicklung eines speziell auf die Anwendung zugeschnittenen Fragebogens können die exaktesten Ergebnisse erzielt und konkrete Problemstellen identifiziert werden. Dies erfordert allerdings einigen Aufwand und entsprechendes Know-How.
+\end{enumerate}
+\heading{KLM/GOMS}
+\textit{GOMS} ist eine Methode zur Evaluation der Effizienz eines Softwaresystems. Durch das Anwenden gewisser Regeln ist es möglich, die Zeitdauer abzuschätzen, die für eine Interaktion benötigt wird. Dazu ist es zuerst von Nöten, alle Schritte der Interaktion zu identifizieren. Diese Schritte werden in atomare Aktivitäten zerlegt, deren einzelne durchschnittliche Dauer durch empirische Analysen ermittelt wurde.\par
+GOMS steht für \textit{Goals, Operators, Methods and Selection Rules}. Dies ist gleichzeitig das Modell, das der Interaktion eines Benutzers zugrunde liegt:
+\begin{itemize}
+	\item \textbf{Ziele:} Die Ziele, die der Benutzer erreichen möchte (Bsp. Dokument drucken)
+	\item \textbf{Operatoren:} Die atomaren Handlungsschritte (Bsp. Drücken einer Taste, Warten auf Feedback der Software)
+	\item \textbf{Methoden:} Kombination von Operatoren zu einer Interaktion, die den Nutzer an sein Ziel bringt
+	\item \textbf{Selektionsregeln:} Nach diesen Regeln entscheidet der Benutzer, welche mögliche Methode er einsetzt
+\end{itemize}
+KLM-GOMS ist eine spezielle, einfache Variante des GOMS-Modells. Es verwendet nur sechs Operatoren, die die atomaren Handlungsschritte darstellen:
+\begin{table}[h!]
+ \centering
+ \begin{tabular}{|l|c|r|} \hline
+ \textbf{Aktion} & \textbf{Code} & \textbf{Dauer} \\ \hline
+ Tastendruck & K & \specialcell{Profi Schreiber:&\myTab 0.08 s\\Guter Schreiber:&\myTab 0.20 s\\Anfänger:&\myTab 1.20 s\\Zufällige Buchst.:&\myTab 0.50 s\\Codes:&\myTab 0.75 s} \\ \hline
+ Maus positionieren & P & 1.1 s \\ \hline
+ Tastatur-/Maus- Wechsel & H & 0.4 s \\ \hline
+ Maustaste & B & 0.1 s \\ \hline
+ Kurz überlegen & M & 1.2 s \\ \hline
+ Antwortzeit & W(t) & Unterschiedlich (je nach t) \\ \hline
+ \end{tabular}
+ \caption{Beispieltabelle mit Linien}
+ \label{tab:klm}
+\end{table}
 
-\subsection{Pluralistic Walkthrough}
-\subsection{Formaler Usability-Test}
-\subsection{Heuristische Evaluation}
-\subsection{Cognitive Walkthrough}
-\subsection{Usability-Befragung}
-\subsection{KLM/GOMS}
-\subsection{A/B-Test}
-\section{JavaFX-Eventhandling} \label{sec:eventhandling}
-
+\heading{A/B-Test}
+\heading{Bewertung der Testverfahren}
+% Mehr Text
+\begin{table}[h!]
+		\begin{tabular}{|l|c|c|c|c|c|c|}
+			\hline
+			\textbf{Methode}&\textbf{Fachwis.}&\textbf{Aufwand}&\textbf{Effektiv.}&\textbf{Validität}&\textbf{Zuverl.}&\textbf{Objektiv.}\\
+			\hline
+			\twolinecell{Hallway\\Testing} & \star & \star & \star \star & \star & \star & \star\\
+			\hline
+			\twolinecell{Usability\\Walkthrough} & \star \star & \star \star & \star \star & \star \star & \star & \star\\
+			\hline
+			\twolinecell{Formaler\\Usability-Test} & \star \star & \star \star \star & \star \star \star & \star \star \star & \star \star & \star \star\\
+			\hline								
+			\twolinecell{A/B-Test\\[2.3ex]} & \star \star & \star \star & \star \star & \star \star \star & \star \star & \star \star \star\\
+			\hline
+			\twolinecell{Heuristische\\Evaluation} & \star \star \star & \star & \star \star \star & \star \star & \star \star \star & \star\\
+			\hline
+			\twolinecell{Usability-\\Befragung} & \star & \star & \star & \star \star & \star \star & \star \star \star\\
+			\hline
+			\twolinecell{GOMS\\[2.3ex]} & \star \star & \star \star & \star & \star \star & \star \star \star & \star \star \star\\
+			\hline
+		\end{tabular}
+		\caption{Gütekriterien von Evaluationsmethoden \cite[S. 225]{Ullenboom2014}}
+	\label{tab:hallwayTesting}
+\end{table}
+\section{JavaFX} \label{sec:javaFX}
+JavaFX ist das aktuellste GUI-Framework der Java-Plattform. Es wird standardmäßig mit Java SE 8 ausgeliefert und soll den Vorgänger \textit{Swing} ersetzen \cite{Mueller2015}.\par
+Die neuartige Technologie vereinigt verschiedene Konzepte, die den Entwickler bei der Entwicklung einer Benutzeroberfläche unterstützen.
+\begin{itemize}
+	\item \textbf{\textit{Szenegraph}:} Sämtliche Bedienelemente sind in einer Baumstruktur, ausgehend von einem Wurzelknoten, angeordnet.
+	\item \textbf{Styling:} Das Aussehen aller UI-Komponenten kann mit Hilfe von CSS-Dateien angepasst werden.
+	\item \textbf{Animationen:} Es können auf unkomplizierte Weise Animationen erstellt und auf beliebige angezeigte Objekte angewandt werden.
+	\item \textbf{FXML:} Die Struktur der Oberfläche kann sowohl in Java-Code, als auch in XML-basierten Dateien, sogenannten FXML-Dateien, definiert werden.
+	\item \textbf{Properties und Bindings:} Alle Controls haben gewisse Eigenschaften (Properties), die sich dynamisch verändern lassen. So kann man ein Property an ein gleichartiges binden. Verändert sich der Wert der einen Eigenschaft, wird der Wert der anderen ebenfalls geändert.
+\end{itemize}
+\subsection{Eventhandling} \label{sec:javafxEventhandling}
+Besonders relevant für die Arbeit ist das Konzept des Eventhandlings in JavaFX.\par
+Ein Event ist eine Eingabe, die durch den Nutzer getätigt wurde. Dies kann z.B. das Drücken oder Loslassen einer Taste auf der Tastatur sein. Auch das Klicken auf ein Bedienelement und das Ausführen einer Geste auf einem Touchscreen stellen Events dar. Jedes dieser Events kann an bestimmten Stellen im Code behandelt werden.\par
+Wie in Abschnitt \ref{sec:javaFX} bereits erwähnt, ist die Komponentenstruktur in JavaFX baumartig aufgebaut. Der Wurzelknoten im Szenegraphen ist die \textit{Stage}. Diese entspricht dem sichtbaren Fenster, in dem die Anwendung läuft. Sie hat als einziges Kind die \textit{Scene}, die alle weiteren Elemente enthält.
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.2999\textwidth]{grafiken/scenegraph.png}
+ \caption{Aufbau Szenegraph \cite{Jakob2015}}
+ \label{fig:scenegraph}
+\end{figure} 
+Zu den Knoten (in JavaFX \textit{Node}s gennant) gehören \textit{Branch Nodes} bzw. Container und \textit{Leaf Nodes}, also konkrete Bedienelemente. Die Container dienen dazu, die Bedienelemente oder weitere Container zu kapseln und diese auf eine eigene Art und Weise auf der Benutzeroberfläche anzuordnen. Dadurch ergibt sich die Baumstruktur des Szenegraphen:
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.2999\textwidth]{grafiken/scenegraph2.png}
+ \caption{Beispiel Szenegraph \cite{Hommel2013}}
+ \label{fig:scenegraph2}
+\end{figure} 
+Jeder Standardknoten aus der JavaFX-Bibliothek implementiert ein Interface namens \textit{EventTarget}. Die Phasen, die ein Event durchläuft sind folgende:
+\begin{enumerate}
+	\item \textbf{Target selection:} Das Ziel des Events wird bestimmt (Bei Mausklick z.B. das Element, auf dem der Cursor ruht)
+	\item \textbf{Route construction:} Die Route vom Wurzelknoten zum Ziel wird konstruiert
+	\item \textbf{Event capturing:} Der Weg des Events vom Wurzelknoten zu dem Zielknoten
+	\item \textbf{Event bubbling:} Der Weg des Events vom Zielknoten zurück zum Wurzelknoten
+\end{enumerate}
+Für das Eventhandling sind die Phasen \textit{Event Capturing} und \textit{Event Bubbling} die wichtigsten. Das Event \enquote{bewegt} sich auf der in Phase 2 konstruierten Route bis zum Zielknoten. Dabei passiert es zunächst den Wurzelknoten und weiterhin jeden Knoten, der im Baum des Szenegraphen zwischen diesem und dem Zielknoten liegt. Dies ist die \textit{Event Capturing} Phase. In der \textit{Event Bubbling} Phase nimmt das Event dann genau den umgekehrten Weg. Es bewegt sich vom Zielknoten zurück zum Wurzelknoten.\par
+Das Event kann an jedem beliebigen Knoten bearbeitet werden, der auf dieser Route liegt. Soll ein Event in der \textit{Capturing}-Phase behandelt werden, muss ein Event-Filter an der entsprechenden Komponente registriert werden. Standardmäßig werden jedoch eher Event-Handler registriert, deren Code in der \textit{Bubbling}-Phase ausgeführt wird. Es ist durchaus möglich, einer Komponente mehrere Handler oder Filter hinzuzufügen, jedoch ist die Ausführungsreihenfolge innerhalb einer Phase nicht definiert. Zusätzlich gibt es \textit{Convenience}-Methoden, die das Hinzufügen eines \textit{Event-Handlers} vereinfachen, da der Typ des zu behandelnden Events nicht explizit angegeben werden muss. Zu beachten ist hierbei, dass die über die \textit{Convenience}-Methoden hinzugefügten Event-Handler pro Komponente erst nach den anderen Handlern ausgeführt werden und es nur genau einen pro Eventtyp gibt.\par
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.6\textwidth]{grafiken/event_phase.png}
+ \caption{Event Capturing und Bubbling}
+ \label{fig:eventPhase}
+\end{figure} 
+Ist die Behandlung eines Events an einem bestimmten Knoten abgeschlossen, kann das Event entweder an den nächsten Knoten weitergereicht oder konsumiert werden. Wird das Event durch den Handler bzw. Filter konsumiert, wird es nicht weitergereicht und die Bearbeitung ist damit abgeschlossen. \par
 \section{Die Anwendung \enquote{FalkoFX}} \label{sec:application}
-
 \section{Responsive Design??} %SubSection?
