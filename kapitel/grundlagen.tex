@@ -20,8 +20,13 @@ Im Gegensatz zur Usability berücksichtigt die UX die Erwartungshaltung des Nutz
 Ein Teilgebiet des UX-Designs ist das Interaktionsdesign (kurz: IxD). Der Fachbereich beschäftigt sich konkret mit den Schnittstellen, die ein Computersystem zwischen der Maschine und dem Nutzer bietet. Über diese Eingabe- und Ausgabesysteme können Informationen in beide Richtungen ausgetauscht werden.\par
 Dafür muss der Benutzer sich zunächst darüber im Klaren sein, welches Ziel er mithilfe der ihm gegebenen technischen Möglichkeiten verfolgt. Er überlegt sich Handlungsschritte, von denen er glaubt, dass sie ihn zu seinem Ziel führen. Bei der Ausführung dieser, interagiert er mit dem Computersystem, welches die Eingaben verarbeitet und die Anwendung in einen neuen Zustand überführt. Dieser neue Zustand, der sich z.B. in einer Änderung der grafischen Oberfläche bemerkbar macht, wird von dem Nutzer interpretiert, woraufhin dieser einen weiteren Handlungsschritt ausführt. Dies tut er solange bis er seine Zielsetzung erreicht hat \cite{Ullenboom2014}. Daraus ergibt sich das Konzept einer Interaktion. \enquote{Das Ziel des Interaktionsdesigns ist es nun, diese Interaktion so zu gestalten, dass der Benutzer möglichst effizient, effektiv und zufriedenstellend an seine Ziele kommt\cite[S. 122]{Ullenboom2014}}.\par
 Ein konkretes Beispiel ist das Ausdrucken eines Dokumentes in Schwarz-Weiß. Der Nutzer wählt aus dem Menü den Befehl \textit{Drucken} aus. Daraufhin öffnet sich ein Fenster, in dem die Einstellungen spezifiziert werden müssen. Der Anwender bekommt diese visuelle Änderung mit und überlegt sich, wo er welche Einstellungen ändern kann. Er wählt in der aktuellen Ansicht den zu verwendenden Drucker aus und betätigt daraufhin die Schaltfläche zum Verwalten der Druckereinstellungen. In dem weiteren Fenster kann er nun die Farbe auf Schwarz-Weiß stellen. Er bestätigt die Änderung und sendet danach den Druckauftrag ab. Werden keine Fehler festgestellt, ist damit die Interaktion abgeschlossen.\par
-Donald A. Norman hat ein Modell entwickelt, das eben diese Interaktion abbildet. Es besteht aus 7 Phasen, die der Nutzer durchläuft, wenn er mit einem System interagiert. \par
-% Grafik
+Donald A. Norman entwickelte ein Modell, das eben diese Interaktion abbildet. Es besteht aus 7 Phasen, die der Nutzer durchläuft, wenn er mit einem System interagiert. \par
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.4\textwidth]{grafiken/action_cycle.png}
+ \caption{Human Action Cycle \cite{Kinser2011}}
+ \label{fig:actionCycle}
+\end{figure}
 Um diesen Interaktionsverlauf zu gewährleisten und die Probleme zu minimieren, definierte Norman 6 Designprinzipien:
 \begin{itemize}
 	\item \textbf{Sichtbarkeit:} Wichtige Funktionen sollten für den Nutzer auf Anhieb sichtbar sein
@@ -31,13 +36,12 @@ Um diesen Interaktionsverlauf zu gewährleisten und die Probleme zu minimieren, 
 	\item \textbf{Konsistenz:} Für identische Interaktionen sollten immer die gleichen Bedienelemente verwendet werden
 	\item \textbf{Affordance:} Objekte sollten durch ihre Gestalt (Form, Farbe, etc.) eine Selbsterklärungsfähigkeit besitzen \cite{Ullenboom2014}
 \end{itemize}
-\subsubsection{Eingabegeräte} \label{sec:inputDevices}
-\heading{Maus}
-
-\heading{Tastatur}
-
-\heading{Touch}
-
+%%\subsubsection{Eingabegeräte} \label{sec:inputDevices}
+%\heading{Maus}
+%
+%\heading{Tastatur}
+%
+%\heading{Touch}
 \section{Visual Design} \label{sec:uid}
 \textit{\enquote{Das Visual Design beschäftigt sich mit der Gestaltung einer Benutzeroberfläche \cite[S. 182]{Ullenboom2014}.}} Es baut auf den Beschlüssen in der Phase des Interaktionsdesign auf und verleiht der Oberfläche ihre finale Gestalt.\par
 Der Visual Designer kümmert sich dabei um die Erstellung von prototypischen Designvorschlägen, die unter Anwendung von Designgrundlagen und -richtlinien entstehen. Das Ziel hierbei ist es, ein Konzept zu erstellen, das zugleich den Nutzer anspricht und zusätzlich die Usability durch Beachtung oben genannter Grundsätze verbessert. Im Laufe des Prozesses werden Objekte so platziert und gestaltet, dass eine einfache Orientierung möglich ist. Durch Farbkonzepte, basierend auf Erkenntnissen der Farbpsychologie, kann die Aufmerksamkeit konkret auf bestimmte Elemente gelenkt und Emotionen ausgelöst werden (durch Assoziation von Farben mit Elementen der Realität). Weitere Themengebiete sind Typographie, also das Auswählen von Schriftform, -größe, etc. und das Erstellen von Grafiken, Symbolen und Piktogrammen. \cite[S. 182]{Ullenboom2014}.
@@ -140,18 +144,16 @@ Für die Durchführung der Nutzertests ist nach Nielsen eine Probandengruppe von
 \begin{equation}
 			1-(1-L)^n\text{ \cite{Nielsen2000}}
 \end{equation}
-Dabei ist \(n\) die Anzahl an Testpersonen und \(L\) der Anteil gefundener Usability-Probleme pro Testsubjekt (31\%) \cite{Nielsen2000}. Das bedeutet bei 5 Testpersonen eine Abdeckung von rund 85\%. Das Testen mit mehr Anwendern würde das Budget stark belasten und wenig zusätzlichen Nutzen mit sich bringen. Daher ist es sinnvoller, in vielen Durchläufen mit wenigen Personen zu testen, als in wenigen Durchläufen mit vielen \cite{Nielsen2000}.
-
-\heading{Eyetracking}
-
+Dabei ist \(n\) die Anzahl an Testpersonen und \(L\) der Anteil gefundener Usability-Probleme pro Testsubjekt (31\%) \cite{Nielsen2000}. Das bedeutet bei 5 Testpersonen eine Abdeckung von rund 85\%. Das Testen mit mehr Anwendern würde das Budget stark belasten und wenig zusätzlichen Nutzen mit sich bringen. Daher ist es sinnvoller, in vielen Durchläufen mit wenigen Personen zu testen, als in wenigen Durchläufen mit vielen \cite{Nielsen2000}.\par
 \heading{Hallway-Testing}
 Das Hallway-Testing ist eine sehr informelle Methode, erstes Feedback über die Usability eines kleinen Programmteiles zu erhalten. Das Prinzip des Hallway-Testing ist es, einen beliebigen zu fragen, was er von einer bestimmten Funktion hält. Dazu wird eine kurze Aufgabe gestellt (wie z.B. \enquote{Drucke dieses Dokument}) und beobachtet, wie der Kandidat sich verhält. Bei komplexeren Sachverhalten wird so kurz wie möglich die Fachlichkeit bzw. der Nutzungskontext erklärt. Ohne Hinweise für die Lösung zu geben, wird die Aufgabe kurz erklärt. Bei der Durchführung denkt der Testnutzer laut mit \cite[S. 226]{Ullenboom2014}.
-Mit sehr wenig Aufwand können durch diese Methode während der Entwicklung grobe Nutzungsprobleme beseitigt werden.
+Mit sehr wenig Aufwand können durch diese Methode während der Entwicklung grobe Nutzungsprobleme beseitigt werden.\par
 \heading{Pluralistic Walkthrough}
 Beim Pluralistic Walkthrough handelt e sich um eine Art von Nutzertests. Die Testkandidaten werden in einer Art Workshop versammelt und bekommen die Anwendung grob vorgestellst, sodass sie sich auf dem Wissensstand eines durchschnittlichen Erstbenutzers befinden. Daraufhin wird die Aufgabenstellung unterbreitet und die Nutzer versuchen diese mit der ihnen gegebenen Anwendung umzusetzen. Am Ende des Tests wird die Optimallösung vorgestellt. Die Testanwender beschreiben daraufhin ihre Lösung. Zum Feststellen der konkreten Usability-Probleme, also der Gründe, warum eine andere Lösung gewählt oder gefunden wurde, wird zum Abschluss über die Lösungen diskutiert und die Fehlerquellen herausgearbeitet \cite[S. 228]{Ullenboom2014}.\par
 \heading{Formaler Usability-Test}
 Bei dieser Methode werden Testpersonen einzeln mit der Bedienung eines Programmes betraut. Nachdem festgelegt wurde, welche Teile der Anwendung getestet werden sollen, werden Aufgaben formuliert und niedergeschrieben. Diese Aufgaben erhält der Testkandidat in schriftlicher Form. Er versucht diese mit der vorliegenden Anwendung zu lösen und wird währenddessen beobachtet. Zu diesem Zweck wird zum Einen der Bildschirminhalt aufgezeichnet und zum anderen die Reaktion des Teilnehmers selbst analysiert \cite[S. 230]{Ullenboom2014}.\par
-% INSERT
+Der Test muss sorgsam vorbereitet werden. Dazu gehört sowohl die Installation der zu testenden Software, als auch das Aufsetzen des Aufnahmemoduls, dass die Interaktion und ggf. den Nutzer selbst aufzeichnet. Um die Aufgabenstellungen lösen zu können, sind ggf. Testdaten erforderlich, die erst noch eingespielt werden müssen. Auch darf nicht vergessen werden, das System zurückzusetzen, nachdem ein Testnutzer Änderungen daran gemacht hat. \cite[S.231]{Ullenboom2014}\par
+Während der Instruktion des Nutzers wird dieser gebeten, während des Tests laut mitzudenken. Diese Technik wird \textbf{\textit{Thinking Aloud}} genannt. Dies hilft dabei, die Absichten, Gefühle und Eindrücke des Anwenders zu ergründen \cite[S. 1]{Fromman2005}. Nach Start des Tests wird durch das Testpersonal keine Hilfestellung mehr gegeben. Weiß der Nutzer nicht, wie er weiter zu verfahren hat, wird der Testdurchlauf abgebrochen \cite[S. 231]{Ullenboom2014}.
 \heading{Heuristische Evaluation}
 Die Heuristische Evaluation ist ein beliebtes Expertentestverfahren. Der Tester untersucht im Rahmen dieser Methode eine Anwendung auf Basis von Heuristiken. In der Regel werden mehrere Usability-Experten eingesetzt, um die Erkennungsrate von Problemen zu erhöhen. Am Ende werden die Ergebnisse zusammengetragen und für jedes gefundene Problem ein Schweregrad ermittelt. Dieser setzt sich aus den Faktoren \textit{Auftretenswahrschienlichkeit}, \textit{Grad der Beeinflussung} und \textit{der Möglichkeit, das Problem zu umgehen}, zusammen. Da die definierten Heuristiken eine gewisse Sicherheit bieten, kann diese Methode auch von weniger erfahrenen Testern angewandt werden \cite[S. 232f.]{Ullenboom2014}.\par
 \heading{Cognitive Walkthrough}
@@ -200,13 +202,52 @@ KLM-GOMS ist eine spezielle, einfache Variante des GOMS-Modells. Es verwendet nu
  Kurz überlegen & M & 1.2 s \\ \hline
  Antwortzeit & W(t) & Unterschiedlich (je nach t) \\ \hline
  \end{tabular}
- \caption{Beispieltabelle mit Linien}
+ \caption{KLM Zeitwerttabelle}
  \label{tab:klm}
 \end{table}
-
 \heading{A/B-Test}
+A/B-Tests dienen dazu, zwei verschiedene Produkte oder Lösungsvarianten miteinander zu vergleichen. Dies geschieht in der Regel in Form von Nutzertests. Dabei bedienen zwei Nutzergruppen gleichzeitig die verschiedenen Systeme und versuchen eine gestellte Aufgabe zu lösen. Dazu wird ein Kriterium definiert, anhand dessen bestimmt werden kann, ob die Interaktion erfolgreich war (z.B. Operationen so gewählt wie durch das Design vorgesehen). Die Lösung, bei der die Testnutzer quantitativ erfolgreicher waren, ist die Alternative mit der besseren Usability \cite[S. 240]{Ullenboom2014}.\par
+Zum Vergleich der Effizienz zweier Anwendung wird häufig eine GOMS-Analyse der beiden Software-Produkte durchgeführt. Dies muss mit vergleichbaren Aufgabenstellungen geschehen, damit die Ergebnisse repräsentativ sind.\par
+\heading{Eyetracking}
+Eytracking ist eine ergänzende Methode, die die Aussagefähigkeit eines Nutzertests erhöhen kann. Es zielt speziell darauf ab, zu erkennen, welchen Bereichen der Anwender vermehrt Aufmerksamkeit schenkt und welche er gar nicht beachtet \cite{Henrici2010}.\par
+Es gibt verschiedene technische Lösungen, um Eyetracking umzusetzen. Eine davon ist die Benutzung einer Eyetracking-Kamera, die zusätzlich zu einem Monitor aufgestellt werden kann. Das Modul besteht aus einer Kameralinse und einer Infrarot-Lichtquelle. Das für das menschliche Auge unsichtbare Infrarot-Licht erzeugt auf der Hornhaut eine sogenannte \enquote{korneale Reflexion}. Diese Reflexion befindet sich immer über, unter oder neben der Pupille. die Pupille selbst reflektiert das Licht nicht. Aus der relativen Position der Reflexion zur Pupille kann nach geeigneter Kalibrierung der Blickpunkt auf dem Bildschirm errechnet werden.\par
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.45\textwidth]{grafiken/eyegaze.png}
+ \caption{Eyetracking \cite{Eyegaze}}
+ \label{fig:eyetracking}
+\end{figure}
+Während der Aufzeichnung können typischerweise zwei wesentliche Arten von Daten gesammelt werden, die mit der Blickrichtung zusammen hängen. Dies sind die Fixation und die Sakkade. Unter Fixation wird der Fokussierung der Augen auf einen bestimmten Bildpunkt verstanden. Dazu gehört die Position und die Dauer der Fokussierung. Eine Sakkade ist der Sprung von einer Fixation zur nächsten. Dies geschieht extrem schnell, sodass zu dieser Zeit mit herkömmlichen Eyetracking-Systemen keine verwertbaren Daten gemessen werden können. Zusätzlich zu diesen Informationen lässt sich auch die Pupillengröße ermitteln. Diese Daten sind allerdings im Rahmen der Usability-Tests kaum von Relevanz.\par
+Die gesammelten Daten lassen sich nun auf mehrere Arten und Weisen visualisieren \cite{Henrici2010}.\par
+Heatmaps und Gaze-Opacity Visualisierungen  zeigen mithilfe von Farbcodes, auf welchen Elementen bzw. Bereichen Fixationen erkannt wurden und wie lange diese gedauert haben. Dabei stehen warme Farben meist für längere Fixationen. Parallel dazu lässt sich eine Gaze Opacity Grafik erstellen, die Bereiche schwarz einfärbt, wenn diese kaum oder gar nicht wahrgenommen wurden \cite{Henrici2010}.
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.48\textwidth]{grafiken/heatmap.png}
+ \caption{Beispiel Heatmap \cite{Henrici2010}}
+ \label{fig:heatmap}
+\end{figure}
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.48\textwidth]{grafiken/gaze_opacity.png}
+ \caption{Beispiel Gaze Opacity \cite{Henrici2010}}
+ \label{fig:gazeOpacity}
+\end{figure}
+Bei der Areas of Interest wird die Oberfläche in verschiedene Bereiche eingeteilt. Die Fixationen in den einzelnen Bereichen werden zusammengezählt und der prozentuale Anteil hinsichtlich der Gesamtheit der Fixationen (und ihrer Dauer) während des gesamten Tests ermittelt. Jedem Bereich kann eine Farbe zugewiesen werden, die als Schlüssel zu der in der Legende festgehaltenen Prozentzahl dient.
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.48\textwidth]{grafiken/areas_of_interest.png}
+ \caption{Beispiel Areas of Interest \cite{Henrici2010}}
+ \label{fig:areasOfInterest}
+\end{figure}
+Die letzte Visualisierung beachtet zusätzlich die Reihenfolge der Fixationen. Es werden verschieden große Kreise genutzt, um Fixationen unterschiedlicher Dauer darzustellen. Diese werden in der richtigen Reihenfolge durch Linien verbunden, welche die synthetisierten Sakkaden darstellen.
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.48\textwidth]{grafiken/gaze_plot.png}
+ \caption{Beispiel Gaze Plot \cite{Henrici2010}}
+ \label{fig:gazePlot}
+\end{figure}
 \heading{Bewertung der Testverfahren}
-% Mehr Text
+Die Testverfahren können nach verschiedenen Kriterien bewertet werden. Ein Teil der Kriterien betrachtet die Anforderungen an das Budget und den Tester, der andere Teil beschäftigt sich mit der Qualität der Ergebnisse. Optimal sind Tests, wenn sie möglichst geringe Anforderungen haben, aber aussagekräftige Ergebnisse liefern. Ein Faktor, der in dieser Übersicht nicht bedacht ist, ist der Zeitpunkt, zu dem die Tests durchgeführt werden können. Das Hallway Testing kann bspw. nur während einer laufenden Entwicklung an einer Komponente durchgeführt werden und eignet sich nicht als Testmethode für ein, möglicherweise komplexes, fertiges System.
 \begin{table}[h!]
 		\begin{tabular}{|l|c|c|c|c|c|c|}
 			\hline
@@ -227,7 +268,7 @@ KLM-GOMS ist eine spezielle, einfache Variante des GOMS-Modells. Es verwendet nu
 			\twolinecell{GOMS\\[2.3ex]} & \star \star & \star \star & \star & \star \star & \star \star \star & \star \star \star\\
 			\hline
 		\end{tabular}
-		\caption{Gütekriterien von Evaluationsmethoden \cite[S. 225]{Ullenboom2014}}
+		\caption{Gütekriterien von Evaluationsmethoden nach Ullenboom \cite[S. 225]{Ullenboom2014}}
 	\label{tab:hallwayTesting}
 \end{table}
 \section{JavaFX} \label{sec:javaFX}
@@ -246,14 +287,14 @@ Ein Event ist eine Eingabe, die durch den Nutzer getätigt wurde. Dies kann z.B.
 Wie in Abschnitt \ref{sec:javaFX} bereits erwähnt, ist die Komponentenstruktur in JavaFX baumartig aufgebaut. Der Wurzelknoten im Szenegraphen ist die \textit{Stage}. Diese entspricht dem sichtbaren Fenster, in dem die Anwendung läuft. Sie hat als einziges Kind die \textit{Scene}, die alle weiteren Elemente enthält.
 \begin{figure}[H]
  \centering
- \includegraphics[width=0.2999\textwidth]{grafiken/scenegraph.png}
+ \includegraphics[width=0.45\textwidth]{grafiken/scenegraph.png}
  \caption{Aufbau Szenegraph \cite{Jakob2015}}
  \label{fig:scenegraph}
 \end{figure} 
 Zu den Knoten (in JavaFX \textit{Node}s gennant) gehören \textit{Branch Nodes} bzw. Container und \textit{Leaf Nodes}, also konkrete Bedienelemente. Die Container dienen dazu, die Bedienelemente oder weitere Container zu kapseln und diese auf eine eigene Art und Weise auf der Benutzeroberfläche anzuordnen. Dadurch ergibt sich die Baumstruktur des Szenegraphen:
 \begin{figure}[H]
  \centering
- \includegraphics[width=0.2999\textwidth]{grafiken/scenegraph2.png}
+ \includegraphics[width=0.45\textwidth]{grafiken/scenegraph2.png}
  \caption{Beispiel Szenegraph \cite{Hommel2013}}
  \label{fig:scenegraph2}
 \end{figure} 
@@ -268,10 +309,20 @@ Für das Eventhandling sind die Phasen \textit{Event Capturing} und \textit{Even
 Das Event kann an jedem beliebigen Knoten bearbeitet werden, der auf dieser Route liegt. Soll ein Event in der \textit{Capturing}-Phase behandelt werden, muss ein Event-Filter an der entsprechenden Komponente registriert werden. Standardmäßig werden jedoch eher Event-Handler registriert, deren Code in der \textit{Bubbling}-Phase ausgeführt wird. Es ist durchaus möglich, einer Komponente mehrere Handler oder Filter hinzuzufügen, jedoch ist die Ausführungsreihenfolge innerhalb einer Phase nicht definiert. Zusätzlich gibt es \textit{Convenience}-Methoden, die das Hinzufügen eines \textit{Event-Handlers} vereinfachen, da der Typ des zu behandelnden Events nicht explizit angegeben werden muss. Zu beachten ist hierbei, dass die über die \textit{Convenience}-Methoden hinzugefügten Event-Handler pro Komponente erst nach den anderen Handlern ausgeführt werden und es nur genau einen pro Eventtyp gibt.\par
 \begin{figure}[H]
  \centering
- \includegraphics[width=0.6\textwidth]{grafiken/event_phase.png}
+ \includegraphics[width=0.75\textwidth]{grafiken/event_phase.png}
  \caption{Event Capturing und Bubbling}
  \label{fig:eventPhase}
 \end{figure} 
-Ist die Behandlung eines Events an einem bestimmten Knoten abgeschlossen, kann das Event entweder an den nächsten Knoten weitergereicht oder konsumiert werden. Wird das Event durch den Handler bzw. Filter konsumiert, wird es nicht weitergereicht und die Bearbeitung ist damit abgeschlossen. \par
+Ist die Behandlung eines Events an einem bestimmten Knoten abgeschlossen, kann das Event entweder an den nächsten Knoten weitergereicht oder konsumiert werden. Wird das Event durch den Handler bzw. Filter konsumiert, wird es nicht weitergereicht und die Bearbeitung ist damit abgeschlossen.\par
 \section{Die Anwendung \enquote{FalkoFX}} \label{sec:application}
-\section{Responsive Design??} %SubSection?
+Das Softwareprojekt \textit{Falko} beschäftigt sich mit der Visualisierung, Erstellung und Pflege länderspezifischer Fahrzeugdaten. Bei \textit{FalkoFX} handelt es sich um ein Unterprojekt für die Entwicklung eines weiteren Clients, der für einen Teil der Benutzer eine bessere Übersicht bietet und so eine höhere Produktivität ermöglicht. Das Projekt wird mit Java 8 und der JavaFX-Technologie umgesetzt.\par
+Der FalkoFX-Client verfolgt, im Vergleich zu dem sehr umfangreichen Falko-Client, um einiges stärker den Ansatz der Usability. Neue Funktionalitäten werden zunächst fachlich durchgeplant und daraufhin mehrere Designkonzepte entworfen und vorgestellt. Moderne Bedienelemente, die von den Standardkomponenten zum Teil stark abweichen, wurden entworfen, um ein gutes, intuitives Nutzungsempfinden zu ermöglichen.\par
+Das Software-System ist in verschiedene Anwendungsfälle untergliedert. Jeder Anwendungsfall hat ein eigenes zugrundeliegendes Datenmodell von Daten, die verglichen und aufbereitet angezeigt werden können. Wird über die Hauptnavigation in einen Anwendungsfall gewechselt, ist der erste Schritt das Auswählen der zu anzuzeigenden Daten. Dies geschieht über einen Filter, der anhand von Kriterien konfiguriert werden kann. Der nächste Schritt ist die Anzeige der Daten. In jedem Anwendungsfall stehen unterschiedliche Ergebnispräsentationen zur Verfügung, zwischen denen gewählt werden kann. Die verfügbaren Arten der Ergebnispräsentation begründen sich auf die Natur der unterliegenden Datenmodelle. Zu jedem in der Ergebnisansicht angezeigten Elemente können die Details aufgerufen werden.\par
+\section{Responsive Design} %SubSection?
+Das Responsive Design ist ein aus der Webentwicklung stammender Begriff. Es beschreibt die Fähigkeit einer Anwendung oder Webseite, auf verschiedenen Monitorgrößen darstellbar und benutzbar zu sein. So kann z.B. eine Webseite, die nach Richtlinien des Responsive Design erstellt wurde, sowohl auf einem Computermonitor (unabhängig von der Auflösung), als auch auf einem Tablet und einem Smartphone korrekt angezeigt werden.\par
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.5\textwidth]{grafiken/responsive_design.png}
+ \caption{Beispiellayout Responsive Design \cite{Moon2013}}
+ \label{fig:responsiveDesign}
+\end{figure} 
