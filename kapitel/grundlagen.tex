@@ -1,6 +1,6 @@
 \chapter{Grundlagen}
 \section{Usability}
-\textit{Usability} in der Software-Entwicklung ist ein Qualitätsmaß, anhand dessen eine Einschätzung über die Einfachheit der Bedienung einer Benutzeroberfläche ermöglicht wird \cite{Nielsen2012}. Umgangssprachlich wird der Begriff \enquote{Benutzerfreundlichkeit} als deutsches Synonym verwendet. Betrachtet man jedoch den Wortstamm genauer, bemerkt man, dass die englische Vokabel aus zwei einzelnen Wörtern besteht. Dies ist zum einen \enquote{use} (engl. benutzen) und zum anderen \enquote{ability} (engl. die Möglichkeit).  Demnach wäre \enquote{Gebrauchstauglichkeit} eine treffendere Übersetzung.\editHere{ZITAT}
+\textit{Usability} in der Software-Entwicklung ist ein Qualitätsmaß, anhand dessen eine Einschätzung über die Einfachheit der Bedienung einer Benutzeroberfläche ermöglicht wird \cite{Nielsen2012}. Umgangssprachlich wird der Begriff \enquote{Benutzerfreundlichkeit} als deutsches Synonym verwendet. Betrachtet man jedoch den Wortstamm genauer, bemerkt man, dass die englische Vokabel aus zwei einzelnen Wörtern besteht. Dies ist zum einen \enquote{use} (engl. benutzen) und zum anderen \enquote{ability} (engl. die Möglichkeit).  Demnach wäre \enquote{Gebrauchstauglichkeit} eine treffendere Übersetzung.\cite{Rampl2007}
 
 Nach Nielsen wird die Qualität einer Anwendung hinsichtlich der Usability durch 5 Kernaspekte bestimmt:
 \begin{itemize}
@@ -159,8 +159,8 @@ Dabei ist \(n\) die Anzahl an Testpersonen und \(L\) der Anteil gefundener Usabi
 \heading{Hallway-Testing}
 Das Hallway-Testing ist eine sehr informelle Methode, erstes Feedback über die Usability eines kleinen Programmteiles zu erhalten. Das Prinzip des Hallway-Testing ist es, einen beliebigen zu fragen, was er von einer bestimmten Funktion hält. Dazu wird eine kurze Aufgabe gestellt (wie z.B. \enquote{Drucke dieses Dokument}) und beobachtet, wie der Kandidat sich verhält. Bei komplexeren Sachverhalten wird so kurz wie möglich die Fachlichkeit bzw. der Nutzungskontext erklärt. Ohne Hinweise für die Lösung zu geben, wird die Aufgabe kurz erklärt. Bei der Durchführung denkt der Testnutzer laut mit \cite[S. 226]{Ullenboom2014}.
 Mit sehr wenig Aufwand können durch diese Methode während der Entwicklung grobe Nutzungsprobleme beseitigt werden.\par
-\heading{Pluralistic Walkthrough}
-Beim Pluralistic Walkthrough handelt e sich um eine Art von Nutzertests. Die Testkandidaten werden in einer Art Workshop versammelt und bekommen die Anwendung grob vorgestellst, sodass sie sich auf dem Wissensstand eines durchschnittlichen Erstbenutzers befinden. Daraufhin wird die Aufgabenstellung unterbreitet und die Nutzer versuchen diese mit der ihnen gegebenen Anwendung umzusetzen. Am Ende des Tests wird die Optimallösung vorgestellt. Die Testanwender beschreiben daraufhin ihre Lösung. Zum Feststellen der konkreten Usability-Probleme, also der Gründe, warum eine andere Lösung gewählt oder gefunden wurde, wird zum Abschluss über die Lösungen diskutiert und die Fehlerquellen herausgearbeitet \cite[S. 228]{Ullenboom2014}.\par
+\heading{Usability Walkthrough}
+Beim Usability Walkthrough handelt es sich um eine Art von Nutzertest. Die Testkandidaten werden in einer Art Workshop versammelt und bekommen die Anwendung grob vorgestellt, sodass sie sich auf dem Wissensstand eines durchschnittlichen Erstbenutzers befinden. Daraufhin wird die Aufgabenstellung unterbreitet und die Nutzer versuchen diese mit der ihnen gegebenen Anwendung umzusetzen. Am Ende des Tests wird die Optimallösung vorgestellt. Die Testanwender beschreiben daraufhin ihre Lösung. Zum Feststellen der konkreten Usability-Probleme, also der Gründe, warum eine andere Lösung gewählt oder gefunden wurde, wird zum Abschluss über die Lösungen diskutiert und die Fehlerquellen herausgearbeitet \cite[S. 228]{Ullenboom2014}.\par
 \heading{Formaler Usability-Test}
 Bei dieser Methode werden Testpersonen einzeln mit der Bedienung eines Programmes betraut. Nachdem festgelegt wurde, welche Teile der Anwendung getestet werden sollen, werden Aufgaben formuliert und niedergeschrieben. Diese Aufgaben erhält der Testkandidat in schriftlicher Form. Er versucht diese mit der vorliegenden Anwendung zu lösen und wird währenddessen beobachtet. Zu diesem Zweck wird zum Einen der Bildschirminhalt aufgezeichnet und zum anderen die Reaktion des Teilnehmers selbst analysiert \cite[S. 230]{Ullenboom2014}.\par
 Der Test muss sorgsam vorbereitet werden. Dazu gehört sowohl die Installation der zu testenden Software, als auch das Aufsetzen des Aufnahmemoduls, dass die Interaktion und ggf. den Nutzer selbst aufzeichnet. Um die Aufgabenstellungen lösen zu können, sind ggf. Testdaten erforderlich, die erst noch eingespielt werden müssen. Auch darf nicht vergessen werden, das System zurückzusetzen, nachdem ein Testnutzer Änderungen daran gemacht hat. \cite[S.231]{Ullenboom2014}\par
@@ -230,20 +230,20 @@ Es gibt verschiedene technische Lösungen, um Eyetracking umzusetzen. Eine davon
 \end{figure}
 Während der Aufzeichnung können typischerweise zwei wesentliche Arten von Daten gesammelt werden, die mit der Blickrichtung zusammen hängen. Dies sind die Fixation und die Sakkade. Unter Fixation wird der Fokussierung der Augen auf einen bestimmten Bildpunkt verstanden. Dazu gehört die Position und die Dauer der Fokussierung. Eine Sakkade ist der Sprung von einer Fixation zur nächsten. Dies geschieht extrem schnell, sodass zu dieser Zeit mit herkömmlichen Eyetracking-Systemen keine verwertbaren Daten gemessen werden können. Zusätzlich zu diesen Informationen lässt sich auch die Pupillengröße ermitteln. Diese Daten sind allerdings im Rahmen der Usability-Tests kaum von Relevanz.\par
 Die gesammelten Daten lassen sich nun auf mehrere Arten und Weisen visualisieren \cite{Henrici2010}.\par
-Heatmaps und Gaze-Opacity Visualisierungen  zeigen mithilfe von Farbcodes, auf welchen Elementen bzw. Bereichen Fixationen erkannt wurden und wie lange diese gedauert haben. Dabei stehen warme Farben meist für längere Fixationen. Parallel dazu lässt sich eine Gaze Opacity Grafik erstellen, die Bereiche schwarz einfärbt, wenn diese kaum oder gar nicht wahrgenommen wurden \cite{Henrici2010}.\editHere{Bilder nebeneinander}
-\begin{figure}[H]
- \centering
- \includegraphics[width=0.48\textwidth]{grafiken/heatmap.png}
- \caption{Beispiel Heatmap \cite{Henrici2010}}
- \label{fig:heatmap}
+Heatmaps und Gaze-Opacity Visualisierungen  zeigen mithilfe von Farbcodes, auf welchen Elementen bzw. Bereichen Fixationen erkannt wurden und wie lange diese gedauert haben. Dabei stehen warme Farben meist für längere Fixationen. Parallel dazu lässt sich eine Gaze Opacity Grafik erstellen, die Bereiche schwarz einfärbt, wenn diese kaum oder gar nicht wahrgenommen wurden \cite{Henrici2010}.
+\begin{figure}[H] 
+	\centering
+	\subfloat[Heatmap] {
+		 \includegraphics[width=0.45\textwidth]{grafiken/heatmap.png}
+	}
+	\hspace{1.0em}
+	\subfloat[GazeOpacity] {
+		 \includegraphics[width=0.45\textwidth]{grafiken/gaze_opacity.png}
+	}
+	\caption{Beispiel Heatmap und Gaze Opacity \cite{Henrici2010}}
+	\label{fig:heatmapGazeOpacity}
 \end{figure}
-\begin{figure}[H]
- \centering
- \includegraphics[width=0.48\textwidth]{grafiken/gaze_opacity.png}
- \caption{Beispiel Gaze Opacity \cite{Henrici2010}}
- \label{fig:gazeOpacity}
-\end{figure}
-Bei der Areas of Interest wird die Oberfläche in verschiedene Bereiche eingeteilt. Die Fixationen in den einzelnen Bereichen werden zusammengezählt und der prozentuale Anteil hinsichtlich der Gesamtheit der Fixationen (und ihrer Dauer) während des gesamten Tests ermittelt. Jedem Bereich kann eine Farbe zugewiesen werden, die als Schlüssel zu der in der Legende festgehaltenen Prozentzahl dient.
+Bei der Areas of Interest Analyse wird die Oberfläche in verschiedene Bereiche eingeteilt. Die Fixationen in den einzelnen Bereichen werden zusammengezählt und der prozentuale Anteil hinsichtlich der Gesamtheit der Fixationen (und ihrer Dauer) während des gesamten Tests ermittelt. Jedem Bereich kann eine Farbe zugewiesen werden, die als Schlüssel zu der in der Legende festgehaltenen Prozentzahl dient.
 \begin{figure}[H]
  \centering
  \includegraphics[width=0.48\textwidth]{grafiken/areas_of_interest.png}
@@ -329,7 +329,7 @@ Ist die Behandlung eines Events an einem bestimmten Knoten abgeschlossen, kann d
 Das Softwareprojekt \textit{Falko} beschäftigt sich mit der Visualisierung, Erstellung und Pflege länderspezifischer Fahrzeugdaten. Bei \textit{FalkoFX} handelt es sich um ein Unterprojekt für die Entwicklung eines weiteren Clients, der für einen Teil der Benutzer eine bessere Übersicht bietet und so eine höhere Produktivität ermöglicht. Das Projekt wird mit Java 8 und der JavaFX-Technologie umgesetzt.\par
 Der FalkoFX-Client verfolgt, im Vergleich zu dem sehr umfangreichen Falko-Client, um einiges stärker den Ansatz der Usability. Neue Funktionalitäten werden zunächst fachlich durchgeplant und daraufhin mehrere Designkonzepte entworfen und vorgestellt. Moderne Bedienelemente, die von den Standardkomponenten zum Teil stark abweichen, wurden entworfen, um ein gutes, intuitives Nutzungsempfinden zu ermöglichen.\par
 Das Software-System ist in verschiedene Anwendungsfälle untergliedert. Jeder Anwendungsfall hat ein eigenes zugrundeliegendes Datenmodell von Daten, die verglichen und aufbereitet angezeigt werden können. Wird über die Hauptnavigation in einen Anwendungsfall gewechselt, ist der erste Schritt das Auswählen der zu anzuzeigenden Daten. Dies geschieht über einen Filter, der anhand von Kriterien konfiguriert werden kann. Der nächste Schritt ist die Anzeige der Daten. In jedem Anwendungsfall stehen unterschiedliche Ergebnispräsentationen zur Verfügung, zwischen denen gewählt werden kann. Die verfügbaren Arten der Ergebnispräsentation begründen sich auf die Natur der unterliegenden Datenmodelle. Zu jedem in der Ergebnisansicht angezeigten Elemente können die Details aufgerufen werden.\par
-\section{Responsive Design} %SubSection?
+\section{Responsive Design}
 Das Responsive Design ist ein aus der Webentwicklung stammender Begriff. Es beschreibt die Fähigkeit einer Anwendung oder Webseite, auf verschiedenen Monitorgrößen darstellbar und benutzbar zu sein. So kann z.B. eine Webseite, die nach Richtlinien des Responsive Design erstellt wurde, sowohl auf einem Computermonitor (unabhängig von der Auflösung), als auch auf einem Tablet und einem Smartphone korrekt angezeigt werden.\par
 \begin{figure}[H]
  \centering
@@ -337,4 +337,11 @@ Das Responsive Design ist ein aus der Webentwicklung stammender Begriff. Es besc
  \caption{Beispiellayout Responsive Design \cite{Moon2013}}
  \label{fig:responsiveDesign}
 \end{figure}
-\editHere{MEHR!}
+Die Kernkomponenten des Responsive Design sind sehr eng mit der Webentwicklung verbunden. Nach Ethan Marcotte definiert sich eine reaktionsfähige Webseite durch drei zentrale Elemente:
+\begin{enumerate}
+ \item Ein flexibles Gestaltungsraster
+ \item Flexible Bilder und Medien
+ \item Mediaqueries, ein Modul aus der CSS3-Spezifikation \cite[S. 15]{Zillgens2012}
+\end{enumerate}
+Die Grundvoraussetzung für das Responsive Design bildet das Gestaltungsraster. Ist ein flexibles \enquote{Grid} nicht gegeben, ist ein Responsive Design nicht möglich.\cite{Zillgens2012}\par
+Die Alternative zum Responsive Design bildet das Adaptive Design. Im Gegensatz zu dem Responsive Design verfolgt dieser frühere Ansatz nicht den generalisierten Weg eines anpassungsfähigen Rasters. Stattdessen werden beim Adaptive Design ab bestimmten, der Website im Browser zur Verfügung stehenden Größen, andere Seitenlayouts ausgegeben. Die Methode des flexiblen Rasters kann daher als eine Weiterentwicklung der adaptiven Gestaltung gesehen werden.\cite[S. 14]{Zillgens2012}\par
