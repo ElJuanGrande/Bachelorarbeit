@@ -14,20 +14,65 @@ Unter den Expertentests ist die Heuristische Evaluation ein geeignetes Verfahren
 Im Bereich der Nutzertests stehen noch der Usability Walkthrough, der Formale Usability-Test und die Usability-Befragung zur Verfügung. Der Usability Walkthrough ist eine Methode, die vermehrt im frühen Entwicklungsstadium einer Anwendung zum Einsatz kommt, da es hier vor allem darum geht, einzelne, komplexe Handlungsschritte zu testen. Die Methode wird vermehrt in einem frühen Entwicklungsstadium der Anwendung eingesetzt. Das Ziel der Tests ist es jedoch nicht, einzelne Schritte zu testen, sondern einen Überblick über die gravierendsten Probleme zu erhalten. Ein Usability Walkthrough mit den erdenklichen Szenarien wäre ein unverhältnismäßig hoher Aufwand. Für den Anwendungsfall eher geeignet ist der Formale Usability-Test in Kombination mit der \textit{Thinking Aloud}-Methode und einer Eye-Tracking-Analyse. Ergänzend kann eine Usability-Befragung unter Zuhilfenahme vorgefertigter Fragebögen durchgeführt werden. Die Durchführung einer solchen Befragung bei einer eingeschränkten Testnutzerzahl erfordert keinen großen Mehraufwand.\par
 \heading{Entwurf Heuristische Evaluation}
 \editHere{Reference Heuristik}
-Die Heuristische Evaluation wird anhand der Heuristik von Nielsen und Molich durchgeführt, die auf 10 Fragestellungen basiert. Zunächst werden möglichst realitätsnahe Aufgabenstellungen definiert, welche den Großteil der durchzuführenden Aktivitäten abdecken. Bei jedem Schritt dieser Aufgaben wird versucht, alle Fragestellungen zu beantworten. Ist dies nicht möglich oder fällt die Antwort negativ aus, liegt möglicherweise ein Usability-Problem vor.\par
+Die Heuristische Evaluation wird anhand der Heuristik von Nielsen und Molich durchgeführt, die 10 Prinzipien beinhalten.\editHere{Source} Zunächst werden möglichst realitätsnahe Aufgabenstellungen definiert, welche den Großteil der durchzuführenden Aktivitäten abdecken. Bei jedem Schritt dieser Aufgaben wird untersucht, ob alle Prinzipien erfüllt werden. Ist dies nicht der Fall, liegt möglicherweise ein Usability-Problem vor.\par
 \editHere{Die Aufgabenstellungen sind im Anhang zu finden}\par
 \heading{Entwurf Formaler Usability-Test}
 Für den Formalen Usablity-Test wird ein Testsystem benötigt. Dies beinhaltet die Hardware (Computer, Ein- und Ausgabegeräte), die lauffähige Software nach dem aktuellen Entwicklungsstand und das konfigurierte Eye-Tracking-System mit Softwareunterstützung für die Aufzeichnung und Analyse von Eye-Tracking-Daten.%Funktionen der Software, die nicht voll funktionsfähig sind, werden außen vor gelassen.
 \par
 Die Auswahl der 5 Testkandidaten erfolgt firmenintern. Die Tatsache, dass alle Testkandidaten einen informationstechnischen beruflichen Hintergrund besitzen, könnte sich sowohl vorteilhaft als auch nachteilhaft auf die Testergebnisse auswirken. Eine positive Beeinflussung könnte dadurch erfolgen, dass die Kandidaten sicherer im Umgang mit der unbekannten Anwendung sind. Die \enquote{Angst} Fehler zu begehen ist aufgrund des technischen Wissens möglicherweise geringer. Andererseits würde ein tatsächlicher Endanwender, der zuvor mit dem produktiven Falko-System gearbeitet hat, zu einem gewissen Maße unterschiedlich agieren, da die Erfahrung und so auch die Erwartungshaltung eine andere ist.\par
+Die Art der Aufgabenstellung, welche die Nutzer zu erfüllen haben, ist weniger abstrakt formuliert als es bei Produkttests üblich ist. Dies soll für eine Kompensation der Erfahrungsdifferenzen zu den tatsächlichen Endanwendern und der Defizite an fachlichem Wissen, das für die Bedienung von Vorteil wäre, sorgen. Dennoch werden durch die Aufgabentexte keine Hinweise auf den Lösungsweg gegeben. Diese muss sich der Anwender selbst erschließen. Die Testfälle orientieren sich an denen der Heuristischen Evaluation, sind aber weniger umfangreich.\par
 \editHere{Das Testkonzept ist im Anhang zu finden}\par
-\par
 \heading{Entwurf Usability-Befragung}
-Der Aufwand für die Usability-Befragung wird so gering wie möglich gehalten. Sie dient vor allem dem Ziel, im Rahmen einer Einzelauswertung, weitergehende Informationen über den Begeisterungsfaktor der Software zu erlangen. Aus diesem Grund wird ein vorgefertigter Fragebogen genutzt. Es wurde sich hier für die Kurzform des einfach zu handhabenden Fragebogen \enquote{AttrakDiff} entschieden, der neben der pragmatischen Qualität auch die hedonische Qualität (Freude) berücksichtigt. Dadurch wird die User Experience stärker in den Fokus der Befragung gerückt, anstatt nur die Usability.\par
+Der Aufwand für die Usability-Befragung wird so gering wie möglich gehalten. Sie dient vor allem dem Ziel, im Rahmen einer Einzelauswertung, weitergehende Informationen über den Begeisterungsfaktor der Software zu erlangen. Aus diesem Grund wird ein vorgefertigter Fragebogen genutzt. Es wurde sich hier für die Kurzform des einfach zu handhabenden Fragebogen \enquote{AttrakDiff} entschieden, der neben der pragmatischen Qualität auch die hedonische Qualität (Freude an der Verwendung) berücksichtigt. Dadurch wird die User Experience stärker in den Fokus der Befragung gerückt, anstatt nur die Usability.\editHere{Cite}\par
 Nach Beendigung des Formalen Usability-Tests erhält der Testkandidat den Fragebogen, der \editHere{X} subjektiv empfundene Eigenschaften der Anwendung aufzählt, die jeweils auf einer 7 stufigen Skala bewertet werden. Ein Beispiel für eine solche Eigenschaft ist die Schönheit der Anwendung.\par
-Der Fragebogen ist 
+\editHere{Der Fragebogen ist im Anhang beigefügt.}
 \section{Durchführung der Analysen} \label{sec:analysisExecution}
+An dieser Stelle wird nur exemplarisch der Arbeitsablauf für die erste Aufgabenstellung der Heuristischen Evaluation aufgeführt. Alle gefundenen Probleme werden jedoch in Abschnitt \ref{sec:analysisConclusion} dargelegt und aufgegriffen. Es werden alle Prinzipien der Heuristik bei jedem Schritt versucht zu beantworten, um eine Vorstellung der nötigen Schritte zu vermitteln. Für die Auswertung relevant sind schlussendlich jedoch nur die Prinzipien, die in einem Schritt nicht erfüllt werden.\par
+\textbf{Fragestellung:} Welche Länder werden als Höhenland eingestuft?\par
+\textbf{Schritt 1:} Auswählen des Anwendungsfalles \enquote{Land}
+\begin{enumerate}
+ \item \textit{Ist der Systemstatus sichtbar?} Ja, eine Ladeanimation signalisiert dem Nutzer, dass während des Bildschirmwechsels Daten geladen werden müssen.
+ \item \textit{Stimmen System und reale Welt überein?} Ja, das System ist nach den Arbeitsabläufen des Kunden in 4 verschiedene Anwendungsfälle gegliedert.
+ \item \textit{Hat der Nutzer genügend Kontrolle und Freiheit?} Ja, durch die Markierung in der Navigationsleiste wird deutlich, welche Aktionen der Nutzer ausführen kann und welche gerade nicht verfügbar sind. Für die Navigation momentan nicht relevante Informationen sind ausgeblendet (z.B. Seitenleiste).
+ \item \textit{Ist die Lösung konsistent und hält Standards ein?} Ja
+ \item \textit{Wird versucht Fehler zu vermeiden?} Ja, nicht bedienbare Elemente, die zu einem invaliden Zustand führen würden, sind deaktiviert (bspw. Seitenleiste).
+ \item \textit{Wird Erkennen Erinnern vorgezogen?} Ja, die Piktogramme der Navigationselemente sind sprechend und unterschiedlich gestaltet. Zusätzlich erscheinen Tooltips über den Schaltflächen.
+ \item \textit{Sind Abläufe flexibel und effizient?} Ja, Mnemonics unterstützend den Nutzer für den direkten Zugriff auf Funktionen.
+ \item \textit{Ist das Design ästhetisch und minimalistisch?} Ja, es sind nur die Navigationselemente sichtbar, zu denen direkt navigiert werden kann. Unterpunkte von Navigationselementen sind ausgeblendet.
+ \item \textit{Gibt es Unterstützung bei Fehlern?} Bislang keine Fehlerquelle vorhanden
+ \item \textit{Sind Hilfe und Dokumentation vorhanden?} Ja, es existieren Hilfetexte im Navigationsbereich. 
+\end{enumerate}
+\textbf{Schritt 2:} Auswählen des Attributes \enquote{Höhenland} für die Filterung
+\begin{enumerate}
+ \item \textit{Ist der Systemstatus sichtbar?} Ja, Änderungen werden umgehend sichtbar. Die angewählte Kategorie wird jeweils hervorgehoben. Nach der Auswahl eines Filterattributes wird dieses entfernt und ist sofort in der Liste der ausgewählten Attribute zu finden.
+ \item \textit{Stimmen System und reale Welt überein?} Ja, die auswählbaren Eigenschaften entsprechen den tatsächlichen Gegebenheiten, die der Nutzer aus seiner täglichen Arbeit gewohnt ist.
+ \item \textit{Hat der Nutzer genügend Kontrolle und Freiheit?} Ja, der Nutzer kann frei durch die verschiedenen Kategorien navigieren und auf einfache Weise Eigenschaften an- und abwählen.
+ \item \textit{Ist die Lösung konsistent und hält Standards ein?} Standards werden eingehalten. Im Gegensatz zu der Navigationsleiste sind hier keine Tooltips für die Piktogramme vorhanden.
+ \item \textit{Wird versucht Fehler zu vermeiden?} Die auswählbaren Kategorien sind mit sprechenden Piktogrammen versehen. Dennoch wären Tooltips von Vorteil für die Bedienung.
+ \item \textit{Wird Erkennen Erinnern vorgezogen?} Siehe vorheriges
+ \item \textit{Sind Abläufe flexibel und effizient?} Ja, die Auswahl von Kategorien und Attributen kann in beliebiger Reihenfolge geschehen, das Finden eines gesuchten Attributes kann durch Filterung oder durch manuelles Suchen erfolgen. Die Listen sind alphanumerisch sortiert, um ein schnelles Auffinden von Eigenschaften zu ermöglichen. Der Aufwand ist minimal.
+ \item \textit{Ist das Design ästhetisch und minimalistisch?} Ja, nur die wichtigsten Funktionen sind dauerhaft sichtbar. Weniger häufig benutzte Kategorien sind in Unterkategorien gegliedert.
+ \item \textit{Gibt es Unterstützung bei Fehlern?} Das versehentliche Anwählen von Kategorien und Attributen ist schnell wieder rückgängig zu machen.
+ \item \textit{Sind Hilfe und Dokumentation vorhanden?} Ja, die Hilfetexte unterstützen auch hier.
+\end{enumerate}
+\textbf{Schritt 3:} Öffnen der Ergebnisansicht
+\begin{enumerate}
+ \item \textit{Ist der Systemstatus sichtbar?} Ja, die Navigationsleiste stellt die Navigationshierarchie deutlich dar.
+ \item \textit{Stimmen System und reale Welt überein?} Ja, die angezeigten Daten entsprechen den realen Gegebenheiten.
+ \item \textit{Hat der Nutzer genügend Kontrolle und Freiheit?} Ja, der Benutzer kann die Ansicht beliebig bedienen und darin navigieren. Attributgruppen lassen sich ausblenden und Umsortieren. Auch das Öffnen der Ansicht selbst kann auf verschiedene Weisen erfolgen. Fortgeschrittene Benutzer könnten für diese Aufgabenstellung auf die Ergebnisansicht verzichten und die Ergebnismenge über die Ergebnisvorschau der Seitenleiste einsehen.
+ \item \textit{Ist die Lösung konsistent und hält Standards ein?} Ja.
+ \item \textit{Wird versucht Fehler zu vermeiden?} Ja, unerfahrene Benutzer gelangen zum Ziel, indem sie auf das deutlich sichtbare \textit{Play}-Symbol klicken, das sie in die nächste Ansicht führt.
+ \item \textit{Wird Erkennen Erinnern vorgezogen?} Ja, siehe vorheriges
+ \item \textit{Sind Abläufe flexibel und effizient?} Ja, die Navigation kann auf verschiedene Weisen erfolgen (\textit{Play}-Button, Navigationselement).
+ \item \textit{Ist das Design ästhetisch und minimalistisch?} Ja, soweit möglich. Aufgrund der hohen Datenmenge müssen viele Informationen gleichzeitig eingeblendet werden. Die Informationsmenge lässt sich durch Ausblenden von Spalten verringern.
+ \item \textit{Gibt es Unterstützung bei Fehlern?} Nicht notwendig.
+ \item \textit{Sind Hilfe und Dokumentation vorhanden?} Ja, die Hilfetexte unterstützen auch hier.
+\end{enumerate}
 
 \section{Durchführung der Nutzertests} \label{sec:testExecution}
 
 \section{Auswertung der Ergebnisse} \label{sec:analysisConclusion}
+\heading{Heuristische Evaluation}
+% Inkonsistenz und fehlende Informationen 
+\heading{Formaler Usability-Test}
+\heading{Usability-Befragung}
