@@ -41,7 +41,7 @@ Aufgabe 1
 \end{itemize}
 Aufgabe 2
 \begin{itemize}
-	\item Zeige die Datenübersicht von Deutschland an.
+	\item Zeige die Datenübersicht von Deutschland an. Benutze dafür keinen Filter.
 	\item Exportiere diese als PDF.
 	\item Wechsle zu Kanada.
 	\item Vergrößere die Ansicht (Lesemodus).
@@ -67,7 +67,7 @@ Aufgabe 6
 	\item Setze alle Einstellungen und geladenen Daten zurück.
 \end{itemize}
 \subsection{Usability-Befragung}
-Der Die Kurzform des AttrakDiff-Fragebogens sieht die folgenden 10 Fragen vor:
+Die Kurzform des AttrakDiff-Fragebogens sieht die folgenden 10 Fragen vor:
 \begin{figure}[H]
  \centering
  \includegraphics[width=1\textwidth]{grafiken/attrak_diff_short.png}
@@ -154,3 +154,47 @@ Es werden hier nur die Prinzipien der Heuristiken von Nielsen und Molich aufgef�
 \textit{Schritt 6:} Auswählen der Länderbezeichnung Deutschland\par
 \textit{Schritt 7:} Öffnen der alternativen Ergebnisansicht (Ergebnistabelle)\par
 \subsection{Nutzertests}
+Es werden nur die gefundenen Probleme aufgeführt, die Nutzer bei der Bedienung hatten.
+\heading{Aufgabe 1: Welche Länder werden als Höhenland eingestuft?}
+\begin{itemize}
+ \item Verwechslung des LTÜ-Anwendungsfalles mit dem Länder-Anwendungsfall
+ \item Versucht, genau das \textbf{-} -Symbol beim Deselektieren von Filterkriterien zu treffen
+ \item Versucht, über Texteingabe im Kopfzeilenfilter der Ergebnisansicht zu scrollen
+\end{itemize}
+\heading{Aufgabe 2: Zeige die Datenübersicht von Deutschland an.}
+\begin{itemize}
+ \item Versucht, die Galerie im Hintergrund zu bedienen, nachdem der Lesemodus versehentlich geöffnet wurde
+ \item Das \ding{58}-Icon in der Navigationsleiste ist schwierig zu treffen, oft das Menüitem selbst angeklickt
+ \item \ding{58}-Icon oft nicht wahrgenommen
+ \item Scrollen in Tabelle über Tippen des Namens versucht (wie bereits in Galerie implementiert)
+\end{itemize}
+\heading{Aufgabe 3: Welche Motoren werden in der Fahrzeugreihe \enquote{R8} der Marke \enquote{Audi} verbaut?}
+\begin{itemize}
+ \item Eintrag \textit{[Alle Werte]} nicht wahrgenommen
+ \item Versucht, in der Multi-Level-Liste mehrere Einträge per Shift zu selektieren
+\end{itemize}
+\heading{Aufgabe 4: Exportiere eine Excel-Übersicht über alle Fahrzeugmodelle der Marke \enquote{Porsche}, die einen \enquote{4.0L V8} Motor verbaut haben.}
+\begin{itemize}
+ \item Länderfilter nicht auf Anhieb gefunden
+ \item Versucht, \textit{F11} als Schnelltaste für Vollbildmodus zu benutzen
+ \item Sortierung der Ländernamen in Multi-Level-Liste verwirrend (nach interner Schlüsselnummer)
+ \item Verwirrung durch fehlenden Text in der Listenansicht des LTÜ-Anwendungsfalles, wenn es für das selektierte Fahrzeug keine Länderfreigaben gibt
+ \item Versucht, eine Freigabe durch Doppelklick auf Fahrzeug zu öffnen
+ \item Unterkategorien bei Subnavigation in LTÜ-Detailansicht nicht offensichtlich (LTÜ und Motorfreigabe)
+ \item Meist Benutzung der Navigationselemente zum Verlassen der Detailansicht
+\end{itemize}
+\heading{Aufgabe 5: Zeige alle Motorfreigaben der Fahrzeugreihe \enquote{S1} in Deutschland an.}
+\begin{itemize}
+ \item Das Motorfreigabe-Icon wurde nicht auf Anhieb erkannt
+ \item Verwirrung beim Entfernen von Kategorien aus der Filterselektion (Eimer-Icon benötigt zwei Klicks zum Ausführen der Aktion)
+\end{itemize}
+\heading{Aufgabe 6: Setze alle Einstellungen und geladenen Daten zurück.}
+\begin{itemize}
+ \item Button zum Zurücksetzen der Daten als \enquote{Aktualisieren} erkannt (aufgrund von Icon und irreführendem Tooltip)
+\end{itemize}
+\heading{Generelle Erkenntnisse}
+\begin{itemize}
+ \item Hilfetexte wurden nicht betrachtet
+ \item Schnellfilter in Multi-Level-Liste erst spät wahrgenommen
+ \item Wenige Erstnutzer machten Gebrauch von Mnemonics, Gesten- oder Tastursteuerung
+\end{itemize}

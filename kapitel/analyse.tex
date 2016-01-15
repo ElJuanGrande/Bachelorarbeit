@@ -23,7 +23,7 @@ Die Auswahl der 5 Testkandidaten erfolgt firmenintern. Die Tatsache, dass alle T
 Die Art der Aufgabenstellung, welche die Nutzer zu erfüllen haben, ist weniger abstrakt formuliert als es bei Produkttests üblich ist. Dies soll für eine Kompensation der Erfahrungsdifferenzen zu den tatsächlichen Endanwendern und der Defizite an fachlichem Wissen, das für die Bedienung von Vorteil wäre, sorgen. Dennoch werden durch die Aufgabentexte keine Hinweise auf den Lösungsweg gegeben. Diese muss sich der Anwender selbst erschließen. Die Testfälle orientieren sich an denen der Heuristischen Evaluation, sind aber weniger umfangreich.\par
 \editHere{Das Testkonzept ist im Anhang zu finden}\par
 \heading{Entwurf Usability-Befragung}
-Der Aufwand für die Usability-Befragung wird so gering wie möglich gehalten. Sie dient vor allem dem Ziel, im Rahmen einer Einzelauswertung, weitergehende Informationen über den Begeisterungsfaktor der Software zu erlangen. Aus diesem Grund wird ein vorgefertigter Fragebogen genutzt. Es wurde sich hier für die Kurzform des einfach zu handhabenden Fragebogen \enquote{AttrakDiff} entschieden, der neben der pragmatischen Qualität auch die hedonische Qualität (Freude an der Verwendung) berücksichtigt. Dadurch wird die User Experience stärker in den Fokus der Befragung gerückt, anstatt nur die Usability.\editHere{Cite}\par
+Der Aufwand für die Usability-Befragung wird so gering wie möglich gehalten. Sie dient vor allem dem Ziel, im Rahmen einer Einzelauswertung, weitergehende Informationen über den Begeisterungsfaktor der Software zu erlangen. Aus diesem Grund wird ein vorgefertigter Fragebogen genutzt. Es wurde sich hier für die Kurzform des einfach zu handhabenden Fragebogens \enquote{AttrakDiff} entschieden, der neben der pragmatischen Qualität auch die hedonische Qualität (Freude an der Verwendung) berücksichtigt. Dadurch wird die User Experience stärker in den Fokus der Befragung gerückt, anstatt nur die Usability.\editHere{Cite}\par
 Nach Beendigung des Formalen Usability-Tests erhält der Testkandidat den Fragebogen, der \editHere{X} subjektiv empfundene Eigenschaften der Anwendung aufzählt, die jeweils auf einer 7 stufigen Skala bewertet werden. Ein Beispiel für eine solche Eigenschaft ist die Schönheit der Anwendung.\par
 \editHere{Der Fragebogen ist im Anhang beigefügt.}
 \section{Durchführung der Analysen} \label{sec:analysisExecution}
@@ -71,9 +71,62 @@ An dieser Stelle wird nur exemplarisch der Arbeitsablauf für die erste Aufgaben
 
 \editHere{Die wichtigsten Punkte sind im Anhang zu finden}
 \section{Durchführung der Nutzertests} \label{sec:testExecution}
-
+Die Durchführung der Nutzertests erfolgt unter Zuhilfenahme der Software \textit{Ogama}. Durch Ogama wird es ermöglicht, Eye-Tracking Experimente aufzusetzen und durchzuführen. Folgende Schritte sind dabei von Nöten:\par
+\begin{enumerate}
+ \item Erstellen der \textit{Slideshow}, die eine Struktur für die einzelnen auszuführenden Aufgaben bietet (z.B. abwechselndes Anzeigen eines Aufgabentextes und der Anwendung)
+ \item Anlegen eines neuen Testnutzers
+ \item Verbinden mit dem Eyetracker und Kalibrierung des Gerätes für den Einzelnutzer
+ \item Starten des Experiments
+\end{enumerate}
+Für die Durchführung wird ein Low-Budget-Eyetracker der Marke \enquote{The Eye Tribe} verwendet, der mit der Software Ogama kompatibel ist. Das Gerät weist eine Abweichung bei der Berechnung des Blickpunktes auf dem Bildschirm auf, die unter den aktuellen Testbedingungen ca. 2 - 4 cm beträgt. Der Wert ergab sich nach einigen Testläufen zur Feststellung der Eignung des Trackers. Für die späteren Analysen, die auf Basis der Eyetracking-Daten durchgeführt werden können, ist diese Varianz vernachlässigbar gering.\par
+Vorab wird dem Testnutzer ein Ausschnitt des Fachwissens näher gebracht, das benötigt wird um die Anwendung steuern und die Aufgaben erfüllen zu können. Während der Tests sind fachliche Fragen gestattet, da nicht davon ausgegangen werden kann, dass das Wissen sofort verinnerlicht wurde. Die Durchführung wird zudem schriftlich dokumentiert um die auftretenden Bedienungsprobleme festzuhalten.\editHere{Siehe Anhang}\par
 \section{Auswertung der Ergebnisse} \label{sec:analysisConclusion}
 \heading{Heuristische Evaluation}
+Die Ergebnisse der Heuristischen Evaluation \editHere{ref Anhang} zeigen einige Usability-Probleme auf.\par
+\begin{itemize}
+ \item \textbf{Aufgabe 1:} Die Piktogramme im Radialmenü enthalten im Gegensatz zur Navigationsleiste keine Tooltips, welche deren Bedeutung näher erläutern. Diese sollten hinzugefügt werden.
+ \item \textbf{Aufgabe 2:} Das \ding{58}-Icon in der Navigationsleiste erscheint nach dem Wechsel in den entsprechenden Bildschirm ohne Rückmeldung an den Benutzer. An dieser Stelle sollte die Aufmerksamkeit des Benutzers bewusst auf das neu erschienene Element gerichtet werden.
+ \item \textbf{Aufgabe 3:} Wenn die Multi-Level-Liste keine Elemente mehr enthält, sollte die Option \textit{[Alle Werte]} nicht verfügbar sein. Stattdessen sollte ein unterstützender Text eingefügt werden, der dem Nutzer signalisiert, dass unter den gegebenen Bedingungen (Filterung, alle Elemente ausgewählt, etc.) keine Werte mehr zur Verfügung stehen.
+ \item \textbf{Aufgabe 4:} \textit{keine Probleme gefunden}
+ \item \textbf{Aufgabe 5:} Bei Wechsel auf das Einstellungsmenü ist die Navigation komplett ausgeblendet. Dies ist jedoch kein signifikantes Problem, da der Nutzer bewusst zu diesem Punkt navigiert und das \enquote{Zurücknavigieren} eine leicht zugängliche und ersichtliche Funktion ist. Die Hilfetexte sind in der Regel auf den \textit{Content}-Bereich zugeschnitten. Daher wird nicht zwangsläufig ein Hilfetext für die Einstellungen benötigt.
+ \item \textbf{Aufgabe 6:} Die Listenansicht kann eine leere Tabelle enthalten, wenn kein Fahrzeug selektiert ist, für das die zugehörigen Freigaben angezeigt werden sollen. Ein Feedback in Form eines stattdessen eingeblendeten Textes würde die Verwirrung des Nutzers verhindern. Das gleiche Problem existiert auch für andere Ergebnistabellen. Diese können leer sein, wenn entsprechende Einstelllungen über die Filter in den Kopfzeilen der einzelnen Spalten getroffen werden.
+\end{itemize}
 % Inkonsistenz und fehlende Informationen 
 \heading{Formaler Usability-Test}
+Der Formale Usability-Test gibt Aufschluss über verschiedene Usability-Probleme. Teilweise sind dies neue Erkenntnisse, teilweise bestätigen sie die Resultate der Heuristischen Evaluation. Einige der Funktionen, die sich für die Testnutzer nicht intuitiv bedienen ließen, sind auf Kundenwunsch so gestaltet worden. Diese stellen kein zu behandelndes Problem dar, da die Endanwender aufgrund ihrer Erfahrung mit dem ursprünglichen System diese Funktionsweise gewohnt sind.\par
+\begin{itemize}
+\item \textbf{Aufgabe 1:} Es kam zu Schwierigkeiten beim Abwählen von versehentlich selektierten Werten. Diese wurden von einigen Kandidaten nicht als klickbare Elemente wahrgenommen bzw. es wurde versucht, exakt das \textbf{-} -Symbol zu treffen, das während des Hover-Effektes eingeblendet wird. Ein Nutzer versuchte, per Texteingabe in dem Kopfzeilenfilter der Ergebnistabelle ein bestimmtes Element zu finden (ähnlich dem Prinzip, das in der Galerie umgesetzt wurde).
+\item \textbf{Aufgabe 2:} Es wurde versucht, die Galeriekomponente zu bedienen, während der Lesemodus im Vordergrund war. Wie auch während der Heuristischen Evaluation festgestellt, wurde das \ding{58}-Icon in der Navigationsleiste von den meisten Nutzern nicht als klickbares Element wahrgenommen und die Funktionen, die sich dahinter verbergen, wurden nicht gefunden. Wie bereits in dem Kopfzeilenfilter, wurde auch in der Ergebnistabelle selbst versucht, per Texteingabe zu einem gesuchten Element zu scrollen.
+\item \textbf{Aufgabe 3:} Der Eintrag \textit{[Alle Werte]} wurde zunächst nicht wahrgenommen. Ein Kandidat versuchte, mehrere Einträge durch gedrückt halten der \textit{Shift}-Taste zu selektieren. Dies widerspricht jedoch dem Bedienkonzept der Komponente und wird aus diesem Grund nicht als Usability-Problem gewertet.
+\item \textbf{Aufgabe 4:} Es wurde versucht, die Taste \textit{F11} als Shortcut für den Vollbildmodus zu verwenden. Die Sortierung der Ländernamen in der Multi-Level-Liste stellten sich als nicht intuitv heraus. Die Endanwender des Kunden orientieren sich jedoch hauptsächlich an den Schlüsselnummern. Besonders in der Listenansicht ist deutlich geworden, dass eine leere Tabelle ohne Hinweistexte zu Verwirrung führen kann. Es wäre also hilfreich, einen Text in der leeren Tabelle einzublenden, der darauf hinweist, dass unter den gegebenen Einstellungen kein Element angezeigt wird. Zwar wurde meist die Navigation zum Verlassen der Detailansicht verwendet, anstatt das \textit{Exit}-Icon zu verwenden, ein Usability-Problem stellt dies jedoch nicht dar, denn beide Methoden führen ohne zeitlichen Verlust zum gewünschten Effekt. Allerdings stellte sich das Bedienen der Subnavigation in der Detailansicht als Hürde heraus. Hier wird der aktuell selektierte Unterpunkt nicht deutlich genug hervorgehoben und wird so schnell übersehen. Dadurch werden einige Unterpunkte nicht als klickbare Elemente wahrgenommen.
+\item \textbf{Aufgabe 5:} Das Icon des Motorfreigabe-Anwendungsfalles wurde nicht sofort erkannt. Beim Entfernen von Kategorien aus der aktuellen Filterselektion kam es zu Schwierigkeiten, da 2 Klicks benötigt werden, um die Kategorie zu entfernen (1. Klick wechselt das Icon zu einem geöffneten Eimer und 2. Klick entfernt die Kategorie). Auch wenn dieses Verhalten im ersten Moment nicht intuitiv erscheint, wurde diese Funktion dennoch so entworfen, damit ein versehentlicher Klick auf das Symbol verhindert wird. Der Nutzer muss also bewusst ein zweites Mal klicken, um die Kategorie wirklich zu entfernen.
+\item \textbf{Aufgabe 6:} Die Schaltfläche zum Zurücksetzen der geladenen Daten ließ sich zwar durch die meisten Testkandidaten schnell auffinden, aber wurde nicht immer als die richtige Schaltfläche identifiziert. Dies liegt zum einen an dem fehlerhaften Tooltip, der bislang mit \enquote{Daten neu laden} beschriftet ist, und zum anderen an dem Icon, das durch die 2 kreisförmig angeordneten Pfeile als Schaltfläche zum \enquote{Aktualisieren} von Daten erkannt wird, nicht als \enquote{Zurücksetzen}.
+\end{itemize}
+Nur wenige der Testnutzer machten Gebrauch von speziellen Tastatursteuerung, Mausgesten oder Mnemonics. Dies ist vermutlich dem Umstand geschuldet, dass diese als Erstnutzer keine Erfahrung mit dem System haben und sich auf die grundlegende Steuerung beschränkten. Die anderen Bedienmethoden dienen eher als \textit{Accelerator}, um den Programmablauf für erfahrene Benutzer zu beschleunigen.\par
+Im folgenden ist beispielhaft eine Heatmap dargestellt, die aus den aufgenommenen Eye-Tracking-Daten gewonnen werden konnte. Sie zeigt das Blickverhalten der Testnutzer auf dem Galerie-Bildschirm.\par
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.6\textwidth]{grafiken/gallery_heatmap.png}
+ \caption{Heatmap Galerie-Bildschirm}
+ \label{fig:galleryHeatmap}
+\end{figure}
+Die Grafik zeigt deutlich, dass das aktuell selektierte Element unter den Vorschaubildern am stärksten wahrgenommen wird. In der Seitenleiste zieht das orange markierte Element, das ebenfalls der Selektion entspricht, einige Aufmerksamkeit auf sich. Es wird aber auch deutlich, dass der Hilfetext im oberen Bereich der Anwendung sehr wenig beachtet wird. Dieses Phänomen ist nicht nur bei der Galerieansicht zu verfolgen. Auch bei der Ausführung anderer Aufgaben, die andere Bildschirme involvieren, wird der Hilfetext größtenteils ignoriert.\par
+Eine Analyse des Blickweges eine Kandidaten zeigt, dass er Schnellfilter der Multi-Level-Liste erst zu einem späteren Zeitpunkt aktiv wahrgenommen wird. Die vorliegende Auswertung nutzt nur die Fixierungen der Augen auf bestimmte Bildpunkte für das Erstellen des Pfades.\par
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.6\textwidth]{grafiken/scanpath.png}
+ \caption{Scanpath: Filter}
+ \label{fig:scanFilter}
+\end{figure}
+Eine Areas Of Interest Analyse mit den Testdaten aller Kandidaten zeigt, dass der Bereich des Hilfetextes extrem selten/ kurz angeschaut wurde. Selbst das Logo hat mehr Aufmerksamkeit erhalten. Besondeers im Fokus der Anwender standen die Multi-Level-Liste und die Seitenleiste. Das Radialmenü wurde vermehrt oben-/ rechtsseitig betrachtet. Viel Zeit wurde außerdem auf das Betrachten der Navigationsleiste aufgewandt.
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.7\textwidth]{grafiken/areas_of_interest_filter.png}
+ \caption{Areas Of Interest: Filter}
+ \label{fig:aoiFIlter}
+\end{figure}
 \heading{Usability-Befragung}
+Die Usability-Befragung bietet nicht direkt Aufschluss darüber, an welchen Stellen Probleme vorhanden sein könnten. Stattdessen bietet sie Anhaltspunkte, in welchen Kategorien, aufgrund der subjektiven Wahrnehmung der Testkandidaten, mehr Aufwand für ein optimales Gesamtergebnis betrieben werden muss.\par
+\editHere{Zusammenfassung AttrakDiff}
+Die Umfrageergebnisse haben eine deutlich positive Tendenz. Vor allem die Attraktivität der Anwendung wurde durch die Testkandidaten hervorgehoben. Im Bereich der Pragmatischen Qualität muss allerdings noch mehr Aufwand betrieben werden. Die Hedonische Qualität ergibt sich zum Teil aus den Zahlreichen Bedienungsmöglichkeiten, die unter anderem im Rahmen dieser Arbeit umgesetzt wurden. Nutzer, die sich intensiver und häufiger mit der Anwendung beschäftigen, werden die Bereiche vermutlich noch auf eine unterschiedliche Art und Weise wahrnehmen.\par
+\editHere{word-pairs}
