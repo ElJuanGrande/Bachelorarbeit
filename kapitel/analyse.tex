@@ -23,7 +23,7 @@ Die Art der Aufgabenstellung, welche die Nutzer zu erfüllen haben, ist weniger 
 Eine Übersicht der Aufgabenstellungen ist im Anhang (\ref{tasksUser}) zu finden.\par
 \heading{Entwurf Usability-Befragung}
 Der Aufwand für die Usability-Befragung wird so gering wie möglich gehalten. Sie dient vor allem dem Ziel, im Rahmen einer Einzelauswertung, weitergehende Informationen über den Begeisterungsfaktor der Software zu erlangen. Aus diesem Grund wird ein vorgefertigter Fragebogen genutzt. Es wurde sich hier für die Kurzform des einfach zu handhabenden Fragebogens \enquote{AttrakDiff} entschieden, der neben der pragmatischen Qualität auch die hedonische Qualität (Freude an der Verwendung) berücksichtigt. Dadurch wird die User Experience stärker in den Fokus der Befragung gerückt, anstatt nur die Usability.\cite[S. 237]{Ullenboom2014}\par
-Nach Beendigung des Formalen Usability-Tests erhält der Testkandidat den Fragebogen, der 10 subjektiv empfundene Eigenschaften der Anwendung aufzählt, die jeweils auf einer 7 stufigen Skala bewertet werden. Ein Beispiel für eine solche Eigenschaft ist die Schönheit der Anwendung.\par
+Nach Beendigung des Formalen Usability-Tests erhält der Testkandidat den Fragebogen. Dieser zählt 10 subjektiv empfundene Eigenschaften der Anwendung auf, die jeweils auf einer 7 stufigen Skala bewertet werden. Ein Beispiel für eine solche Eigenschaft ist die Schönheit der Anwendung.\par
 Der Fragebogen ist im Anhang beigefügt (\ref{sec:usabilitySurvey}).\par
 \section{Durchführung der Analysen} \label{sec:analysisExecution}
 An dieser Stelle wird exemplarisch der Arbeitsablauf für die erste Aufgabenstellung der Heuristischen Evaluation aufgeführt. Alle gefundenen Probleme werden jedoch in Abschnitt \ref{sec:analysisConclusion} dargelegt und aufgegriffen. Es werden alle Prinzipien der Heuristik bei jedem Schritt versucht zu beantworten, um eine Vorstellung der nötigen Schritte zu vermitteln. Für die Auswertung relevant sind schlussendlich jedoch nur die Prinzipien, die in einem Schritt nicht erfüllt werden.\par
@@ -51,7 +51,7 @@ An dieser Stelle wird exemplarisch der Arbeitsablauf für die erste Aufgabenstel
  \item \textit{Wird Erkennen Erinnern vorgezogen?} Die auswählbaren Kategorien sind mit sprechenden Piktogrammen versehen. Dennoch wären Tooltips von Vorteil für die korrekte Identifikation dieser.
  \item \textit{Sind Abläufe flexibel und effizient?} Ja, die Auswahl von Kategorien und Attributen kann in beliebiger Reihenfolge geschehen, das Finden eines gesuchten Attributes kann durch Filterung oder durch manuelles Suchen erfolgen. Die Listen sind alphanumerisch sortiert, um ein schnelles Auffinden von Eigenschaften zu ermöglichen. Der Aufwand ist minimal.
  \item \textit{Ist das Design ästhetisch und minimalistisch?} Ja, nur die wichtigsten Funktionen sind dauerhaft sichtbar. Weniger häufig benutzte Kategorien sind in Unterkategorien gegliedert.
- \item \textit{Gibt es Unterstützung bei Fehlern?} Das versehentliche Anwählen von Kategorien und Attributen ist schnell wieder rückgängig zu machen.
+ \item \textit{Gibt es Unterstützung bei Fehlern?} Ja, das versehentliche Anwählen von Kategorien und Attributen ist schnell wieder rückgängig zu machen.
  \item \textit{Sind Hilfe und Dokumentation vorhanden?} Ja, die Hilfetexte unterstützen auch hier.
 \end{enumerate}
 \textbf{Schritt 3:} Öffnen der Ergebnisansicht
@@ -91,7 +91,7 @@ Die Ergebnisse der Heuristischen Evaluation (Anhang \ref{sec:resultExpert}) zeig
 \end{itemize}
 % Inkonsistenz und fehlende Informationen 
 \heading{Formaler Usability-Test}
-Der Formale Usability-Test gibt Aufschluss über verschiedene Usability-Probleme. Teilweise sind dies neue Erkenntnisse, teilweise bestätigen sie die Resultate der Heuristischen Evaluation. Einige der Funktionen, die sich für die Testnutzer nicht intuitiv bedienen ließen, sind auf Kundenwunsch so gestaltet worden. Diese stellen kein zu behandelndes Problem dar, da die Endanwender aufgrund ihrer Erfahrung mit dem ursprünglichen System diese Funktionsweise gewohnt sind.\par
+Der Formale Usability-Test gibt Aufschluss über verschiedene Usability-Probleme. Teilweise sind dies neue Erkenntnisse, teilweise bestätigen sie die Resultate der Heuristischen Evaluation. Einige der Funktionen, die sich für die Testnutzer nicht intuitiv bedienen ließen, sind auf Kundenwunsch gestaltet worden. Diese stellen kein zu behandelndes Problem dar, da die Endanwender aufgrund ihrer Erfahrung mit dem ursprünglichen System diese Funktionsweise gewohnt sind.\par
 \begin{itemize}
 \item \textbf{Aufgabe 1:} Es kam zu Schwierigkeiten beim Abwählen von versehentlich selektierten Werten. Diese wurden von einigen Kandidaten nicht als klickbare Elemente wahrgenommen bzw. es wurde versucht, exakt das \textbf{-} -Symbol zu treffen, das während des Hover-Effektes eingeblendet wird. Ein Nutzer versuchte, per Texteingabe in dem Kopfzeilenfilter der Ergebnistabelle ein bestimmtes Element zu finden (ähnlich dem Prinzip, das in der Galerie umgesetzt wurde).
 \item \textbf{Aufgabe 2:} Es wurde versucht, die Galeriekomponente zu bedienen, während der Lesemodus im Vordergrund war. Wie auch während der Heuristischen Evaluation festgestellt, wurde das \ding{58}-Icon in der Navigationsleiste von den meisten Nutzern nicht als klickbares Element wahrgenommen und die Funktionen, die sich dahinter verbergen, wurden nicht gefunden. Wie bereits in dem Kopfzeilenfilter, wurde auch in der Ergebnistabelle selbst versucht, per Texteingabe zu einem gesuchten Element zu scrollen.
@@ -116,7 +116,7 @@ Eine Analyse des Blickweges eine Kandidaten zeigt, dass er Schnellfilter der Mul
  \caption{Scanpath: Filter}
  \label{fig:scanFilter}
 \end{figure}
-Eine Areas Of Interest Analyse mit den Testdaten aller Kandidaten zeigt, dass der Bereich des Hilfetextes extrem selten/ kurz angeschaut wurde. Selbst das Logo hat mehr Aufmerksamkeit erhalten. Besonders im Fokus der Anwender standen auf dem Filterbildschirm die Multi-Level-Liste und die Seitenleiste. Das Radialmenü wurde vermehrt oben-/ rechtsseitig betrachtet. Viel Zeit wurde außerdem auf das Betrachten der Navigationsleiste aufgewandt.
+Eine Areas Of Interest Analyse mit den Testdaten aller Kandidaten zeigt, dass der Bereich des Hilfetextes extrem selten oder nur kurz angeschaut wurde. Selbst das Logo hat mehr Aufmerksamkeit erhalten. Besonders im Fokus der Anwender standen auf dem Filterbildschirm die Multi-Level-Liste und die Seitenleiste. Das Radialmenü wurde vermehrt oben-/ rechtsseitig betrachtet. Viel Zeit wurde außerdem auf das Betrachten der Navigationsleiste aufgewandt.
 \begin{figure}[H]
  \centering
  \includegraphics[width=0.7\textwidth]{grafiken/areas_of_interest_filter.png}
