@@ -15,7 +15,7 @@
 \usepackage{amsmath, amssymb}
 
 \hyphenchar\font=\string"7F
-\hyphenation{Stream Streams Ge-ne-ric-Re-sult-Ta-ble-Con-trol-lers}
+\hyphenation{Stream Streams Ge-ne-ric-Re-sult-Ta-ble-Con-trol-lers Be-dien-mög-lich-kei-ten}
 
 \newcommand{\heading}[1]{\needspace{4\baselineskip}\textbf{#1}\par}
 \newcommand{\specialcell}[2][c]{%
@@ -32,11 +32,20 @@
 \frontmatter
 % Titelseite
 \input{kapitel/titlePage}
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage
+\thispagestyle{empty}
+\mbox{}
 \include{kapitel/erklaerung}
 \include{kapitel/anmerkung}
 \include{kapitel/zusammenfassung}
 \include{kapitel/abstract}
 \tableofcontents
+\newpage
+\thispagestyle{empty}
+\mbox{}
 
 \mainmatter
 \include{kapitel/einleitung}
@@ -49,8 +58,17 @@
 
 \nocite{*}
 \bibliography{biblio/biblio}
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{\listfigurename}
 \listoffigures
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{\listtablename}
 \listoftables
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{Quellcodeverzeichnis}
 \lstlistoflistings
 %\newpage
 %\setglossarystyle{indexgroup}
