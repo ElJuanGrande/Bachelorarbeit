@@ -153,7 +153,7 @@ Für die Durchführung der Nutzertests ist nach Nielsen eine Probandengruppe von
 			1-(1-L)^n\text{ \cite{Nielsen2000}}
 \end{equation}
 Dabei ist \(n\) die Anzahl an Testpersonen und \(L\) der Anteil gefundener Usability-Probleme pro Testsubjekt (31\%) \cite{Nielsen2000}. Das bedeutet bei 5 Testpersonen eine Abdeckung von rund 85\%. Das Testen mit mehr Anwendern würde das Budget stark belasten und wenig zusätzlichen Nutzen mit sich bringen. Daher ist es sinnvoller, in vielen Durchläufen mit wenigen Personen zu testen, als in wenigen Durchläufen mit vielen \cite{Nielsen2000}.\par
-\begin{table}[h!]
+\begin{table}[H]
  \centering
  \begin{tabular}{|c|c|} \hline
  \textbf{Anzahl Tester (n)} & \textbf{Gefundene Probleme} \\ \hline
@@ -167,7 +167,7 @@ Dabei ist \(n\) die Anzahl an Testpersonen und \(L\) der Anteil gefundener Usabi
  8 & 95\% \\ \hline
  \end{tabular}
  \caption{Aufgedeckte Usability Probleme in Abhängigkeit der Testeranzahl}
- \label{tab:klm}
+ \label{tab:anzahlTester}
 \end{table}
 Zu den bekanntesten Expertentestverfahren zählen die folgenden Methoden:
 \begin{itemize}
@@ -184,6 +184,7 @@ Unter den Nutzertestverfahren sind die nachfolgenden Methoden relevant:
  \item Usability-Befragung
  \item A/B-Test
 \end{itemize}
+Die einzelnen Methoden werden im Anschluss näher erläutert.
 \heading{Hallway-Testing}
 Das Hallway-Testing ist eine sehr informelle Methode, erstes Feedback über die Usability eines kleinen Programmteiles zu erhalten. Das Prinzip des Hallway-Testing ist es, einen beliebigen Arbeitskollegen zu fragen, was er von einer bestimmten Funktion hält. Dazu wird eine kurze Aufgabe gestellt (wie z.B. \enquote{Drucke dieses Dokument}) und beobachtet, wie der Kandidat sich verhält. Bei komplexeren Sachverhalten wird so kurz wie möglich die Fachlichkeit bzw. der Nutzungskontext erklärt. Ohne Hinweise für die Lösung zu geben, wird die Aufgabe kurz erklärt. Bei der Durchführung denkt der Testnutzer laut mit \cite[S. 226]{Ullenboom2014}.
 Mit sehr wenig Aufwand können durch diese Methode während der Entwicklung grobe Nutzungsprobleme beseitigt werden.\par
@@ -230,7 +231,7 @@ GOMS steht für \textit{Goals, Operators, Methods and Selection Rules}. Dies ist
 	\item \textbf{Selektionsregeln:} Nach diesen Regeln entscheidet der Benutzer, welche mögliche Methode er einsetzt
 \end{itemize}
 KLM-GOMS ist eine spezielle, einfache Variante des GOMS-Modells. Es verwendet nur sechs Operatoren, die die atomaren Handlungsschritte darstellen:
-\begin{table}[h!]
+\begin{table}[H]
  \centering
  \begin{tabular}{|l|c|r|} \hline
  \textbf{Aktion} & \textbf{Code} & \textbf{Dauer} \\ \hline
@@ -287,7 +288,7 @@ Die letzte Visualisierung beachtet zusätzlich die Reihenfolge der Fixationen. E
 \end{figure}
 \heading{Bewertung der Testverfahren}
 Die Testverfahren können nach verschiedenen Kriterien bewertet werden. Ein Teil der Kriterien betrachtet die Anforderungen an das Budget und den Tester, der andere Teil beschäftigt sich mit der Qualität der Ergebnisse. Optimal sind Tests, wenn sie möglichst geringe Anforderungen haben, aber aussagekräftige Ergebnisse liefern. Ein Faktor, der in dieser Übersicht nicht bedacht ist, ist der Zeitpunkt, zu dem die Tests durchgeführt werden können. Das Hallway Testing kann bspw. nur während einer laufenden Entwicklung an einer Komponente durchgeführt werden und eignet sich nicht als Testmethode für ein fertiges System.
-\begin{table}[h!]
+\begin{table}[H]
 		\begin{tabular}{|l|c|c|c|c|c|c|}
 			\hline
 			\textbf{Methode}&\textbf{Fachwis.}&\textbf{Aufwand}&\textbf{Effektiv.}&\textbf{Validität}&\textbf{Zuverl.}&\textbf{Objektiv.}\\
@@ -315,14 +316,14 @@ JavaFX ist das aktuelle GUI-Framework der Java-Plattform. Es wird standardmäßi
 Die neuartige Technologie vereinigt verschiedene Konzepte, die den Entwickler bei der Entwicklung einer Benutzeroberfläche unterstützen.
 \begin{itemize}
 	\item \textbf{\textit{Szenegraph}:} Sämtliche Bedienelemente sind in einer Baumstruktur, ausgehend von einem Wurzelknoten, angeordnet.
-	\item \textbf{Styling:} Das Aussehen aller UI-Komponenten kann mit Hilfe von CSS-Dateien angepasst werden.
-	\item \textbf{Animationen:} Es können auf unkomplizierte Weise Animationen erstellt und auf beliebige angezeigte Objekte angewandt werden.
 	\item \textbf{FXML:} Die Struktur der Oberfläche kann sowohl in Java-Code, als auch in XML-basierten Dateien, sogenannten FXML-Dateien, definiert werden.
+	\item \textbf{Styling:} Das Aussehen aller UI-Komponenten kann mit Hilfe von CSS-Dateien angepasst werden.
 	\item \textbf{Properties und Bindings:} Alle Controls haben gewisse Eigenschaften (Properties), die sich dynamisch verändern lassen. So kann man ein Property an ein gleichartiges binden. Verändert sich der Wert der einen Eigenschaft, wird der Wert der anderen ebenfalls geändert.
+		\item \textbf{Animationen:} Es können auf unkomplizierte Weise Animationen erstellt und auf beliebige angezeigte Objekte angewandt werden.
 \end{itemize}
 \subsection{Eventhandling} \label{sec:javafxEventhandling}
 Besonders relevant für die Arbeit ist das Konzept des Eventhandlings in JavaFX.\par
-Ein Event ist eine Eingabe, die durch den Nutzer getätigt wurde. Dies kann z.B. das Drücken oder Loslassen einer Taste auf der Tastatur sein. Auch das Klicken auf ein Bedienelement und das Ausführen einer Geste auf einem Touchscreen stellen Events dar. Jedes dieser Events kann an bestimmten Stellen im Code behandelt werden.\par
+Ein \textit{InputEvent}, eine besondere Form eines Events, ist eine Eingabe, die durch den Nutzer getätigt wurde. Dies kann z.B. das Drücken oder Loslassen einer Taste auf der Tastatur sein. Auch das Klicken auf ein Bedienelement und das Ausführen einer Geste auf einem Touchscreen stellen Events dar. Jedes dieser Events kann an bestimmten Stellen im Code behandelt werden.\par
 Wie in Abschnitt \ref{sec:javaFX} bereits erwähnt, ist die Komponentenstruktur in JavaFX baumartig aufgebaut. Der Wurzelknoten im Szenegraphen ist die \textit{Stage}. Diese entspricht dem sichtbaren Fenster, in dem die Anwendung läuft. Sie hat als einziges Kind die \textit{Scene}, die alle weiteren Elemente enthält.
 \begin{figure}[H]
  \centering
@@ -345,7 +346,7 @@ Jeder Standardknoten aus der JavaFX-Bibliothek implementiert ein Interface namen
 	\item \textbf{Event bubbling:} Der Weg des Events vom Zielknoten zurück zum Wurzelknoten
 \end{enumerate}
 Für das Eventhandling sind die Phasen \textit{Event Capturing} und \textit{Event Bubbling} die wichtigsten. Das Event \enquote{bewegt} sich auf der in Phase 2 konstruierten Route bis zum Zielknoten. Dabei passiert es zunächst den Wurzelknoten und weiterhin jeden Knoten, der im Baum des Szenegraphen zwischen diesem und dem Zielknoten liegt. Dies ist die \textit{Event Capturing} Phase. In der \textit{Event Bubbling} Phase nimmt das Event dann genau den umgekehrten Weg. Es bewegt sich vom Zielknoten zurück zum Wurzelknoten.\par
-Das Event kann an jedem beliebigen Knoten bearbeitet werden, der auf dieser Route liegt. Soll ein Event in der \textit{Capturing}-Phase behandelt werden, muss ein Event-Filter an der entsprechenden Komponente registriert werden. Standardmäßig werden jedoch eher Event-Handler registriert, deren Code in der \textit{Bubbling}-Phase ausgeführt wird. Es ist durchaus möglich, einer Komponente mehrere Handler oder Filter hinzuzufügen, jedoch ist die Ausführungsreihenfolge innerhalb einer Phase nicht definiert. Zusätzlich gibt es \textit{Convenience}-Methoden, die das Hinzufügen eines \textit{Event-Handlers} vereinfachen, da der Typ des zu behandelnden Events nicht explizit angegeben werden muss. Zu beachten ist hierbei, dass die über die \textit{Convenience}-Methoden hinzugefügten Event-Handler pro Komponente erst nach den anderen Handlern ausgeführt werden und es nur genau einen pro Eventtyp gibt.\par
+Das Event kann an jedem beliebigen Knoten bearbeitet werden, der auf dieser Route liegt. Soll ein Event in der \textit{Capturing}-Phase behandelt werden, muss ein \textit{Event-Filter} an der entsprechenden Komponente registriert werden. Standardmäßig werden jedoch eher \textit{Event-Handler} registriert, deren Code in der \textit{Bubbling}-Phase ausgeführt wird. Es ist durchaus möglich, einer Komponente mehrere Handler oder Filter hinzuzufügen, jedoch ist die Ausführungsreihenfolge innerhalb einer Phase nicht definiert. Zusätzlich gibt es \textit{Convenience}-Methoden, die das Hinzufügen eines \textit{Event-Handlers} vereinfachen, da der Typ des zu behandelnden Events nicht explizit angegeben werden muss. Zu beachten ist hierbei, dass die über die \textit{Convenience}-Methoden hinzugefügten Event-Handler pro Komponente erst nach den anderen Handlern ausgeführt werden und es nur genau einen pro Eventtyp gibt.\par
 \begin{figure}[H]
  \centering
  \includegraphics[width=0.75\textwidth]{grafiken/event_phase.png}
